@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { GithubIcon, LinkedInIcon, TelegramIcon } from "./Icons";
+import { motion } from "framer-motion";
 
 const CutomLink = ({
   href,
@@ -34,20 +36,27 @@ const NavBar = () => {
         <CutomLink href="/Projects" title="Projects" />
         <CutomLink href="/Articles" title="Articles" />
       </nav>
-      {/* <h2>Logo</h2> */}
-      <nav>
-        <Link href="/" target="_blank">
-          T
-        </Link>
-        <Link href="/" target="_blank">
-          T
-        </Link>
-        <Link href="/" target="_blank">
-          T
-        </Link>
-        <Link href="/" target="_blank">
-          T
-        </Link>
+
+      <nav className="flex justify-center items-center space-x-4">
+        <motion.a
+          href="https://www.linkedin.com/in/hosseinjorfi/"
+          target="_blank"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <LinkedInIcon className="" />
+        </motion.a>
+        <motion.a
+          href="https://github.com/hossein-jorfi"
+          target="_blank"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <GithubIcon className="" />
+        </motion.a>
+        <motion.a href="#" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+          <TelegramIcon className="" />
+        </motion.a>
       </nav>
     </header>
   );
