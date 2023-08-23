@@ -1,6 +1,6 @@
 import NavBar from "@/components/NavBar";
 import "./globals.css";
-import { Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google"; 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function RootLayout({
