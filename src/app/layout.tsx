@@ -1,7 +1,9 @@
 import NavBar from "@/components/NavBar";
 import "./globals.css";
-import { Montserrat } from "next/font/google";
-const montserrat = Montserrat({ subsets: ["latin"] });
+// import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
+// const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Hossein Jorfi",
@@ -15,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className={`${montserrat.className} bg-light w-full min-h-screen 2xl:container`}>
+      <body
+        className={`${inter.className} bg-light w-full min-h-screen 2xl:container`}
+      >
         <NavBar />
         {children}
       </body>
