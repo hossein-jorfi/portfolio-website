@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .my-container {
+    @apply px-32 2xl:container;
+  }
+}

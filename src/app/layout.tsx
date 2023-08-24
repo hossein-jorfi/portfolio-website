@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import "./globals.css";
 // import { Montserrat } from "next/font/google";
 import { Inter } from "next/font/google";
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 // const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -18,10 +19,11 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${inter.className} bg-light w-full min-h-screen 2xl:container`}
+        className={`${inter.className} bg-light w-full min-h-screen`}
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
