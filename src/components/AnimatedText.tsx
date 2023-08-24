@@ -1,5 +1,32 @@
-import { spawn } from "child_process";
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
+
+const quote = {
+  initial: {
+    opacity: 1,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const singleWorld = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 const AnimatedText = ({
   title,
@@ -12,13 +39,22 @@ const AnimatedText = ({
     <div
       className={`w-full mx-auto py-2 flex justify-between items-center text-center overflow-hidden ${className}`}
     >
-      <h1
-        className={`inline-block w-full text-dark font-bold capitalize text-8xl ${className}`}
+      <motion.h1
+        variants={quote}
+        initial="initial"
+        animate="animate"
+        className={`inline-block w-full text-dark font-bold capitalize text-xl sm:text-5xl md:text-6xl xl:text-8xl ${className}`}
       >
         {title.split(" ").map((item: string, index: number) => (
-          <span key={index}>{item}</span>
+          <motion.span
+            variants={singleWorld}
+            key={index}
+            className="inline-block"
+          >
+            {item}
+          </motion.span>
         ))}
-      </h1>
+      </motion.h1>
     </div>
   );
 };
