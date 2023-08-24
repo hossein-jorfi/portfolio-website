@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="flex items-center text-dark w-full min-h-screen z-0 bg-light px-32 2xl:container">
+    <div className="my-container flex items-center text-dark w-full min-h-screen z-0 bg-light">
       <div className="flex items-center justify-between w-full">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
