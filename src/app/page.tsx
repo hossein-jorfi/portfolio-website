@@ -1,20 +1,27 @@
+"use client";
 import Image from "next/image";
 import picture2 from "../../public/images/myPic.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
     <div className="flex items-center text-dark w-full min-h-screen z-0 bg-light px-32 2xl:container">
       <div className="flex items-center justify-between w-full">
-        <div className="w-1/2 rounded-full full ">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="w-1/2 rounded-full full "
+        >
           <Image
             src={picture2}
             alt="profile"
-            className="w-5/6 rounded-full h-auto border-4 border-black"
+            className="w-5/6 rounded-full h-auto border-8 border-black"
           />
-        </div>
+        </motion.div>
         <div className="w-1/2 flex flex-col items-center self-center">
           <AnimatedText className="text-left" title="Hossein Jorfi" />
           <p className="font-medium text-base">

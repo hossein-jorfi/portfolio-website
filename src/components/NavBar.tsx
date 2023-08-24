@@ -16,26 +16,44 @@ const CutomLink = ({
   const pathname = usePathname();
 
   return (
-    <Link className={`${className} relative group`} href={href}>
-      {title}
-      <span
-        className={`absolute left-0 -bottom-1 bg-dark h-[2px] group-hover:w-full transition-[width] ease-in-out duration-300 ${
-          href === pathname ? "w-full" : "w-0"
-        }`}
-      ></span>
-    </Link>
+    <motion.span
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+      transition={{ duration: 0.5 }}
+      className="relative group inline-block"
+    >
+      <Link className={`${className} `} href={href}>
+        {title}
+        <motion.span
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "anticipate" }}
+          className={`absolute left-0 -bottom-1 bg-dark h-[2px] group-hover:w-full transition-[width] ease-in-out duration-300 ${
+            href === pathname ? "w-full" : "w-0"
+          }`}
+        ></motion.span>
+      </Link>
+    </motion.span>
   );
 };
 
 const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex justify-between items-center">
-      <nav className="space-x-10">
+      <motion.nav
+        animate={{
+          transition: {
+            delay: 0.5,
+            staggerChildren: 0.08,
+          },
+        }}
+        className="space-x-10"
+      >
         <CutomLink href="/" title="Home" />
         <CutomLink href="/About" title="About" />
         <CutomLink href="/Projects" title="Projects" />
         <CutomLink href="/Articles" title="Articles" />
-      </nav>
+      </motion.nav>
 
       <nav className="flex justify-center items-center space-x-4">
         <motion.a
