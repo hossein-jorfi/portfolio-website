@@ -55,10 +55,12 @@ const Page = () => {
     <div className="my-container min-h-screen w-full">
       <AnimatedText title="About Me" className="text-left" />
       <div className="mt-10 flex justify-between items-center space-x-10">
-
         <Paragraph value="My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready to work as Front-End Developer, Now its been about 3 years that i started learning programming, and about 2 years that i focused on Front End developing, I love learning new technology, Individual development, Team Work , and i open to work in person (Tehran) and Remote" />
-        <div className="">
-          <Image src={myPic2} alt="my photo" />
+
+        <div className=" h-max rounded-2xl border-2 border-solid border-dark overflow-hidden bg-light p-8">
+          <div>
+            <Image src={myPic2} alt="my photo" className="rounded-2xl" />
+          </div>
         </div>
       </div>
     </div>
