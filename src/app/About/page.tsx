@@ -1,10 +1,10 @@
 "use client";
 import AnimatedText from "@/components/AnimatedText";
 import { motion } from "framer-motion";
-import myPic2 from "../../../public/images/myPic2.JPEG";
+import myPic2 from "../../../public/images/myPic2.jpeg";
 import Image from "next/image";
 
-const Paragraph = ({ value }: { value: string }) => {
+const Paragraph = ({ value, className }: { value: string, className?: string }) => {
   const splitedWord = value.split(" ");
   const container = {
     hidden: { opacity: 0 },
@@ -36,7 +36,7 @@ const Paragraph = ({ value }: { value: string }) => {
 
   return (
     <motion.p
-      className="text-2xl mt-3 font-semibold text-dark"
+      className={`text-2xl mt-3 font-semibold text-dark ${className}`}
       variants={container}
       initial="hidden"
       animate="visible"
@@ -54,13 +54,18 @@ const Page = () => {
   return (
     <div className="my-container min-h-screen w-full">
       <AnimatedText title="About Me" className="text-left" />
+      {/* flex justify-between items-center space-x-10 */}
       <div className="mt-10 flex justify-between items-center space-x-10">
-        <Paragraph value="My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready to work as Front-End Developer, Now its been about 3 years that i started learning programming, and about 2 years that i focused on Front End developing, I love learning new technology, Individual development, Team Work , and i open to work in person (Tehran) and Remote" />
+        
+          <Paragraph className="" value="My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready to work as Front-End Developer, Now its been about 3 years that i started learning programming, and about 2 years that i focused on Front End developing, I love learning new technology, Individual development, Team Work , and i open to work in person (Tehran) and Remote" />
 
-        <div className=" h-max rounded-2xl border-2 border-solid border-dark overflow-hidden bg-light p-8">
-          <div>
-            <Image src={myPic2} alt="my photo" className="rounded-2xl" />
-          </div>
+        <div className=" relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-4">
+          <Image
+            src={myPic2}
+            alt="my photo"
+            className="rounded-2xl w-full h-auto z-20"
+          />
+          <div className="absolute top-0 -right-3 -z-10  w-[102%] h-[103%] rounded-[1.5rem] bg-dark"></div>
         </div>
       </div>
     </div>
