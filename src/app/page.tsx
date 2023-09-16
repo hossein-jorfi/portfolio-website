@@ -19,7 +19,7 @@ function Home() {
           <Image
             src={picture2}
             alt="profile"
-            className="w-5/6 rounded-full h-auto border-8 border-black"
+            className="w-5/6 rounded-full h-auto border-8 border-black dark:border-black"
           />
         </motion.div>
         <div className="w-1/2 flex flex-col items-center self-center">
@@ -34,14 +34,14 @@ function Home() {
               target="_blank"
               download={true}
               href="/CV.pdf"
-              className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border-2 border-dark"
+              className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border-2 border-dark dark:border-light dark:hover:bg-dark dark:hover:text-light"
             >
               Resume <LinkArrow className="ml-2" />
             </Link>
             <Link
               href="mailto:hosseinjorfi81@gmail.com"
               target="_blank"
-              className="ml-4 font-medium text-dark underline text-lg"
+              className="ml-4 font-medium text-dark dark:text-light underline text-lg"
             >
               Contact
             </Link>

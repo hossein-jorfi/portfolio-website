@@ -28,7 +28,7 @@ const CutomLink = ({
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "anticipate" }}
-          className={`absolute left-0 -bottom-1 bg-dark h-[2px] group-hover:w-full transition-[width] ease-in-out duration-300 ${
+          className={`absolute left-0 -bottom-1 bg-dark dark:bg-light h-[2px] group-hover:w-full transition-[width] ease-in-out duration-300 ${
             href === pathname ? "w-full" : "w-0"
           }`}
         ></motion.span>
@@ -39,7 +39,7 @@ const CutomLink = ({
 
 const NavBar = () => {
   return (
-    <header className="my-container w-full py-8 font-medium flex justify-between items-center">
+    <header className="my-container w-full py-8 font-medium flex justify-between items-center dark:bg-dark dark:text-light">
       <motion.nav
         animate={{
           transition: {

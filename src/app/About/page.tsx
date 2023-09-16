@@ -4,7 +4,13 @@ import { motion } from "framer-motion";
 import myPic2 from "../../../public/images/myPic2.jpeg";
 import Image from "next/image";
 
-const Paragraph = ({ value, className }: { value: string, className?: string }) => {
+const Paragraph = ({
+  value,
+  className,
+}: {
+  value: string;
+  className?: string;
+}) => {
   const splitedWord = value.split(" ");
   const container = {
     hidden: { opacity: 0 },
@@ -36,7 +42,7 @@ const Paragraph = ({ value, className }: { value: string, className?: string }) 
 
   return (
     <motion.p
-      className={`text-2xl mt-3 font-semibold text-dark ${className}`}
+      className={`text-2xl mt-3 font-semibold text-dark dark:text-light ${className}`}
       variants={container}
       initial="hidden"
       animate="visible"
@@ -52,20 +58,22 @@ const Paragraph = ({ value, className }: { value: string, className?: string }) 
 
 const Page = () => {
   return (
-    <div className="my-container min-h-screen w-full">
+    <div className="my-container min-h-screen w-full dark:bg-dark">
       <AnimatedText title="About Me" className="text-left" />
       {/* flex justify-between items-center space-x-10 */}
       <div className="mt-10 flex justify-between items-center space-x-10">
-        
-          <Paragraph className="" value="My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready to work as Front-End Developer, Now its been about 3 years that i started learning programming, and about 2 years that i focused on Front End developing, I love learning new technology, Individual development, Team Work , and i open to work in person (Tehran) and Remote" />
+        <Paragraph
+          className=""
+          value="My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready to work as Front-End Developer, Now its been about 3 years that i started learning programming, and about 2 years that i focused on Front End developing, I love learning new technology, Individual development, Team Work , and i open to work in person (Tehran) and Remote"
+        />
 
-        <div className=" relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-4">
+        <div className=" relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-4">
           <Image
             src={myPic2}
             alt="my photo"
-            className="rounded-2xl w-full h-auto z-20"
+            className="rounded-2xl w-full h-auto"
           />
-          <div className="absolute top-0 -right-3 -z-10  w-[102%] h-[103%] rounded-[1.5rem] bg-dark"></div>
+          <div className="absolute top-0 -right-3 -z-10  w-[102%] h-[103%] rounded-[1.5rem] bg-dark dark:bg-light"></div>
         </div>
       </div>
     </div>

@@ -3,8 +3,8 @@ import heartGif from "../../public/gif/icons8-heart.gif";
 
 const Footer = () => {
   return (
-    <footer className="my-container border-t-4 flex justify-center items-center border-dark py-6">
-      <p className="text-dark font-semibold flex items-center">
+    <footer className="my-container border-t-4 flex justify-center items-center border-dark dark:border-light bg-light dark:bg-dark py-6">
+      <p className="text-dark dark:text-light font-semibold flex items-center">
         Build with{" "}
         <span className="px-2 w-11">
           <Image src={heartGif} alt="heart" className="rounded-full" />
