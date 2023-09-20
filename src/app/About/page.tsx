@@ -73,7 +73,7 @@ const Page = () => {
             alt="my photo"
             className="rounded-2xl w-full h-auto"
           />
-          <div className="absolute top-0 -right-3 -z-10  w-[102%] h-[103%] rounded-[1.5rem] bg-dark dark:bg-light"></div>
+          <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[1.5rem] bg-dark"></div>
         </div>
       </div>
     </div>
