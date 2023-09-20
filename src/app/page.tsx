@@ -9,12 +9,12 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <div className="my-container flex items-center text-dark bg-light dark:bg-dark dark:text-light w-full min-h-screen z-0">
-      <div className="flex items-center justify-between w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full">
         <motion.div
+          className="w-full md:w-1/2 flex justify-center items-center rounded-full full "
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="w-1/2 rounded-full full "
         >
           <Image
             src={picture2}
@@ -22,7 +22,7 @@ function Home() {
             className="w-5/6 rounded-full h-auto border-8 border-black dark:border-black"
           />
         </motion.div>
-        <div className="w-1/2 flex flex-col items-center self-center">
+        <div className="w-full md:w-1/2  flex flex-col items-center self-center">
           <AnimatedText className="text-left" title="Hossein Jorfi" />
           <p className="font-medium text-base">
             As a skilled Front-End developer, I am dedicated to turning ideas
