@@ -4,6 +4,6 @@
 
 @layer components {
   .my-container {
-    @apply px-32 2xl:container;
+    @apply px-4 sm:px-8 md:px-32 2xl:container;
   }
 }

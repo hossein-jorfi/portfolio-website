@@ -39,44 +39,60 @@ const CutomLink = ({
 
 const NavBar = () => {
   return (
-    <header className="my-container w-full py-8 font-medium flex justify-between items-center dark:bg-dark dark:text-light">
-      <motion.nav
-        animate={{
-          transition: {
-            delay: 0.5,
-            staggerChildren: 0.08,
-          },
-        }}
-        className="space-x-10"
-      >
-        <CutomLink href="/" title="Home" />
-        <CutomLink href="/About" title="About" />
-        <CutomLink href="/Projects" title="Projects" />
-        <CutomLink href="/Articles" title="Articles" />
-      </motion.nav>
+    <>
+      <header className="hidden sm:flex my-container w-full py-8 font-medium justify-between items-center bg-light dark:bg-dark dark:text-light">
+        <motion.nav
+          animate={{
+            transition: {
+              delay: 0.5,
+              staggerChildren: 0.08,
+            },
+          }}
+          className="space-x-10"
+        >
+          <CutomLink href="/" title="Home" />
+          <CutomLink href="/About" title="About" />
+          <CutomLink href="/Projects" title="Projects" />
+          <CutomLink href="/Articles" title="Articles" />
+        </motion.nav>
 
-      <nav className="flex justify-center items-center space-x-4">
-        <motion.a
-          href="https://www.linkedin.com/in/hosseinjorfi/"
-          target="_blank"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <LinkedInIcon className="" />
-        </motion.a>
-        <motion.a
-          href="https://github.com/hossein-jorfi"
-          target="_blank"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <GithubIcon className="" />
-        </motion.a>
-        <motion.a href="#" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
-          <TelegramIcon className="" />
-        </motion.a>
-      </nav>
-    </header>
+        <nav className="flex justify-center items-center space-x-4">
+          <motion.a
+            href="https://www.linkedin.com/in/hosseinjorfi/"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <LinkedInIcon className="" />
+          </motion.a>
+          <motion.a
+            href="https://github.com/hossein-jorfi"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <GithubIcon className="" />
+          </motion.a>
+          <motion.a href="#" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+            <TelegramIcon className="" />
+          </motion.a>
+        </nav>
+      </header>
+
+      {/* Mobile */}
+      <header className="bg-light dark:bg-dark dark:text-light sm:hidden my-container py-8 flex justify-between items-center">
+        <div>Menu</div>
+        <div>
+          <Link
+            href="mailto:hosseinjorfi81@gmail.com"
+            target="_blank"
+            className="ml-4 font-medium text-dark dark:text-light underline text-lg"
+          >
+            Contact
+          </Link>
+        </div>
+      </header>
+    </>
   );
 };
 
