@@ -19,7 +19,7 @@ function Home() {
           <Image
             src={picture2}
             alt="profile"
-            className="w-5/6 rounded-full h-auto border-8 border-black dark:border-black"
+            className="w-4/6 md:w-5/6 rounded-full h-auto border-8 border-black dark:border-black"
           />
         </motion.div>
         <div className="w-full md:w-1/2  flex flex-col items-center self-center">

@@ -321,9 +321,9 @@ const Page = () => {
       <div>
         <AnimatedText title="About Me" className="text-left" />
         {/* flex justify-between items-center space-x-10 */}
-        <div className="mt-10 flex justify-between items-center space-x-10">
+        <div className="mt-10 flex flex-col md:flex-row justify-between items-center space-y-5 md:space-x-10">
           <Paragraph
-            className="w-1/2"
+            className="w-full md:w-1/2"
             value="My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready to work as Front-End Developer, Now its been about 3 years that i started learning programming, and about 2 years that i focused on Front End developing, I love learning new technology, Individual development, Team Work , and i open to work in person (Tehran) and Remote"
           />
 
@@ -342,9 +342,14 @@ const Page = () => {
         <AnimatedText title="Skills" className="text-left" />
         <div className="mt-10 flex flex-wrap justify-between">
           {skillItems.map((item) => (
-            <div key={item.id} className="w-20 mx-3 flex flex-col justify-between text-center">
+            <div
+              key={item.id}
+              className="w-20 mx-3 flex flex-col justify-between text-center"
+            >
               <div>{item.svg}</div>
-              <p className="text-dark dark:text-light font-bold">{item.title}</p>
+              <p className="text-dark dark:text-light font-bold">
+                {item.title}
+              </p>
             </div>
           ))}
         </div>
