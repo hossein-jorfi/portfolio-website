@@ -8,8 +8,9 @@ import {
   SunIcon,
   TelegramIcon,
 } from "./Icons";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import TransitionEffect from "./TransitionEffect";
 import { useRouter } from "next/navigation";
 
 const CutomLink = ({
@@ -89,6 +90,7 @@ const CutomMobileLink = ({
 const NavBar = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState("light");
+  const path = usePathname();
 
   const themeToggle = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
@@ -99,7 +101,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <div className={`${theme}`}>
+    <div className={`${theme}`} key={`${path}dkdsd`}>
       {/* Dextop */}
       <header className="hidden sm:flex my-container w-full py-8 font-medium justify-between items-center bg-light dark:bg-dark dark:text-light">
         <motion.nav
