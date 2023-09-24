@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="my-container flex items-center text-dark bg-light dark:bg-dark dark:text-light w-full min-h-screen z-0">
+    <div className="my-container flex items-start md:items-center text-dark bg-light dark:bg-dark dark:text-light w-full min-h-screen z-0">
       <div className="flex flex-col md:flex-row items-center justify-center w-full">
         <motion.div
           className="w-full md:w-1/2 flex justify-center items-center rounded-full full "
@@ -22,8 +22,8 @@ function Home() {
             className="w-4/6 md:w-5/6 rounded-full h-auto border-8 border-black dark:border-black"
           />
         </motion.div>
-        <div className="w-full md:w-1/2  flex flex-col items-center self-center">
-          <AnimatedText className="text-left" title="Hossein Jorfi" />
+        <div className="w-full md:w-1/2 mt-10 md:mt-0 flex flex-col items-center self-center">
+          <AnimatedText className="text-left text-4xl" title="Hossein Jorfi" />
           <p className="font-medium text-base">
             As a skilled Front-End developer, I am dedicated to turning ideas
             into innovative web applications. Explore my latest projects and
