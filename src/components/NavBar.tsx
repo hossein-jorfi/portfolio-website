@@ -1,7 +1,13 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GithubIcon, LinkedInIcon, TelegramIcon } from "./Icons";
+import {
+  GithubIcon,
+  LinkedInIcon,
+  MoonIcon,
+  SunIcon,
+  TelegramIcon,
+} from "./Icons";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -82,7 +88,7 @@ const CutomMobileLink = ({
 
 const NavBar = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   const themeToggle = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
@@ -131,11 +137,18 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
             <GithubIcon className="" />
           </motion.a>
           <motion.p
+            className={`cursor-pointer p-1 rounded-full ${
+              theme === "dark" ? "bg-light" : "bg-dark"
+            }`}
             onClick={themeToggle}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            theme
+            {theme === "dark" ? (
+              <MoonIcon className="text-dark" />
+            ) : (
+              <SunIcon className="text-light" />
+            )}
           </motion.p>
         </nav>
       </header>
@@ -163,8 +176,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
           ></span>
         </div>
 
-        {
-          isOpen &&
+        {isOpen && (
           <motion.div
             initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
             animate={{ scale: 1, opacity: 1 }}
@@ -221,15 +233,22 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
                 <GithubIcon className="" />
               </motion.a>
               <motion.p
+                className={`cursor-pointer p-1 rounded-full ${
+                  theme === "dark" ? "bg-dark" : "bg-light"
+                }`}
                 onClick={themeToggle}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                theme
+                {theme === "dark" ? (
+                  <MoonIcon className="text-light" />
+                ) : (
+                  <SunIcon className="text-dark" />
+                )}
               </motion.p>
             </nav>
           </motion.div>
-        }
+        )}
 
         <div>
           <Link
