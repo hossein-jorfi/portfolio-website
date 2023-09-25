@@ -42,7 +42,21 @@ function Home() {
                 href="/CV.pdf"
                 className="flex w-fit items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border-2 border-dark dark:border-light dark:hover:bg-dark dark:hover:text-light"
               >
-                Resume <LinkArrow className="ml-2" />
+                <span>Resume</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 ml-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  />
+                </svg>
               </Link>
               <Link
                 href="mailto:hosseinjorfi81@gmail.com"
