@@ -40,7 +40,7 @@ function Home() {
                 target="_blank"
                 download={true}
                 href="/CV.pdf"
-                className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border-2 border-dark dark:border-light dark:hover:bg-dark dark:hover:text-light"
+                className="flex w-fit items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg font-semibold text-lg hover:bg-light hover:text-dark border-2 border-dark dark:border-light dark:hover:bg-dark dark:hover:text-light"
               >
                 Resume <LinkArrow className="ml-2" />
               </Link>

@@ -8,10 +8,11 @@ import {
   SunIcon,
   TelegramIcon,
 } from "./Icons";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
-import TransitionEffect from "./TransitionEffect";
 import { useRouter } from "next/navigation";
+import moon from "../../public/icons/moon.png";
+import Image from "next/image";
 
 const CutomLink = ({
   href,
@@ -124,10 +125,16 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
+            className="w-fit"
           >
             <LinkedInIcon className="" />
           </motion.a>
-          <motion.a href="#" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+          <motion.a
+            className="w-fit"
+            href="#"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <TelegramIcon className="" />
           </motion.a>
           <motion.a
@@ -135,6 +142,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
+            className="w-fit"
           >
             <GithubIcon className="" />
           </motion.a>
@@ -147,9 +155,35 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
             whileTap={{ scale: 0.9 }}
           >
             {theme === "dark" ? (
-              <MoonIcon className="text-dark" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 text-dark"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+              </svg>
             ) : (
-              <SunIcon className="text-light" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 text-light"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                />
+              </svg>
             )}
           </motion.p>
         </nav>
@@ -243,9 +277,35 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
                 whileTap={{ scale: 0.9 }}
               >
                 {theme === "dark" ? (
-                  <MoonIcon className="text-light" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6 text-light"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                  </svg>
                 ) : (
-                  <SunIcon className="text-dark" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6 text-dark"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                    />
+                  </svg>
                 )}
               </motion.p>
             </nav>
