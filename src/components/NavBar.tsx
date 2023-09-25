@@ -9,10 +9,8 @@ import {
   TelegramIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import moon from "../../public/icons/moon.png";
-import Image from "next/image";
 
 const CutomLink = ({
   href,
@@ -94,8 +92,23 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
   const path = usePathname();
 
   const themeToggle = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+    if (theme === "light") {
+      setTheme("dark")
+      localStorage.setItem("theme", "dark")
+    } else {
+      setTheme("light")
+      localStorage.setItem("theme", "light")
+    }
   };
+
+  useEffect(() => {
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "light");
+    } else {
+      const loclaSTheme = localStorage.getItem("theme");
+      setTheme(loclaSTheme as string);
+    }
+  }, []);
 
   const clickHandler = () => {
     setIsOpen((prev) => !prev);
