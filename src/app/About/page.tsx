@@ -343,14 +343,14 @@ const Page = () => {
 
         <div className="mt-20 pb-20">
           <AnimatedText title="Skills" className="text-left" />
-          <div className="mt-10 flex flex-wrap justify-between">
+          <div className="mt-10 flex flex-wrap justify-between items-center">
             {skillItems.map((item) => (
               <div
                 key={item.id}
-                className="w-20 mx-3 flex flex-col justify-between text-center"
+                className="w-16 md:w-20 mt-4 mx-3 flex flex-col justify-between text-center"
               >
                 <div>{item.svg}</div>
-                <p className="text-dark dark:text-light font-bold">
+                <p className="text-dark text-xs dark:text-light font-bold">
                   {item.title}
                 </p>
               </div>
