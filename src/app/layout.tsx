@@ -3,6 +3,7 @@ import "./globals.css";
 // import { Montserrat } from "next/font/google";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
+import { useRef } from "react";
 const inter = Inter({ subsets: ["latin"] });
 // const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html>
       <body className={`${inter.className} bg-light w-full min-h-screen`}>
