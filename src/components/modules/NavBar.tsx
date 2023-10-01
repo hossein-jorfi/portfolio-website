@@ -7,7 +7,7 @@ import {
   MoonIcon,
   SunIcon,
   TelegramIcon,
-} from "./Icons";
+} from "../elements/Icons";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";

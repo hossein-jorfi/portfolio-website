@@ -1,5 +1,5 @@
 import Image from "next/image";
-import myPic2 from "../../public/images/about_page_photo.jpg";
+import myPic2 from "../../../public/images/about_page_photo.jpg";
 
 const ProjectCard = () => {
   return (

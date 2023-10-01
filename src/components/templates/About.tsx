@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import AnimatedText from "../AnimatedText";
+import AnimatedText from "../elements/AnimatedText";
 import Image from "next/image";
 import myPic2 from "../../../public/images/about_page_photo.jpg";
 
@@ -316,7 +316,7 @@ const skillItems = [
 
 const About = () => {
   return (
-    <div className="mt-52">
+    <div className="my-container min-h-screen w-full dark:bg-dark">
       <div>
         <AnimatedText title="About Me" className="text-left text-5xl" />
         {/* flex justify-between items-center space-x-10 */}
@@ -330,10 +330,9 @@ const About = () => {
             <Image
               src={myPic2}
               alt="my photo"
-              className="rounded-2xl w-full h-auto relative"
+              className="rounded-2xl w-full h-auto"
             />
             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[1.5rem] bg-dark"></div>
-            {/* <div className="absolute top-0 -right-3 bg-dark w-[102%] h-[103%] rounded-[1.5rem] -z-10">test</div> */}
           </div>
         </div>
       </div>

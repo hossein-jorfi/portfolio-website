@@ -1,10 +1,13 @@
-import NavBar from "@/components/NavBar";
 import "./globals.css";
-// import { Montserrat } from "next/font/google";
+
+// Components
+import NavBar from "@/components/modules/NavBar";
+import Footer from "@/components/modules/Footer";
+
+// Font
 import { Inter } from "next/font/google";
-import Footer from "@/components/Footer";
-import { useRef } from "react";
 const inter = Inter({ subsets: ["latin"] });
+// import { Montserrat } from "next/font/google";
 // const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
