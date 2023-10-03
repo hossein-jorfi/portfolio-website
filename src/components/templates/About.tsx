@@ -137,7 +137,7 @@ const skillItems = [
         ></path>
       </svg>
     ),
-    title: "Next",
+    title: "Typescript",
   },
 
   {
