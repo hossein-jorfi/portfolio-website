@@ -6,6 +6,7 @@ import AnimatedText from "../elements/AnimatedText";
 
 // Images
 import cryptoImage from "../../../public/projectsImages/Crypto/mian.png"
+import weblogImage from "../../../public/projectsImages/Weblog/main.png"
 
 const Projects = () => {
   return (
@@ -98,8 +99,8 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
-            image={cryptoImage}
-            title="Crypto"
+            image={weblogImage}
+            title="Weblog"
             icons={[
               {
                 id: 0,
