@@ -9,7 +9,7 @@ import cryptoImage from "../../../public/projectsImages/Crypto/mian.png"
 
 const Projects = () => {
   return (
-    <div className="my-container bg-light dark:bg-dark">
+    <div className="my-container bg-light dark:bg-dark min-h-screen">
       <div className="pt-10 pb-36">
         <AnimatedText title="Projects" className="text-left text-5xl" />
         <div className="sm:grid grid-cols-12 gap-10 mt-8 px-2 sm:px-0">
