@@ -17,6 +17,7 @@ const Projects = () => {
         <AnimatedText title="Projects" className="text-left text-5xl" />
         <div className="sm:grid grid-cols-12 gap-10 mt-8 px-2 sm:px-0">
           <ProjectCard
+            routeId="crypto"
             image={cryptoImage}
             title="Crypto"
             icons={[
@@ -108,8 +109,9 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
+            routeId="2"
             image={cart_context}
-            title="Card (Context)"
+            title="Cart (Context)"
             icons={[
               {
                 id: 0,
@@ -194,8 +196,9 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
+            routeId="3"
             image={cart_redux}
-            title="Card (Redux)"
+            title="Cart (Redux)"
             icons={[
               {
                 id: 0,
@@ -280,6 +283,7 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
+            routeId="weblog"
             image={weblogImage}
             title="Weblog"
             icons={[
