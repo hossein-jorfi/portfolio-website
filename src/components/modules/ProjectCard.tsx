@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import myPic2 from "../../../public/images/about_page_photo.jpg";
+import Link from "next/link";
 
 const ProjectCard = ({
   icons,
@@ -11,7 +12,7 @@ const ProjectCard = ({
   image: StaticImageData;
 }) => {
   return (
-    <div className="mt-7 sm:mt-0 w-full h-max relative sm:col-span-6 rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-4">
+    <Link href="/Projects/project-detail" className="mt-7 sm:mt-0 w-full h-max relative sm:col-span-6 rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-4">
       <div className="absolute top-0 -right-3 w-[102%] h-[103%] rounded-[1.5rem] bg-dark dark:bg-light -z-10"></div>
 
       <div className="flex justify-between items-center">
@@ -31,7 +32,7 @@ const ProjectCard = ({
           className="rounded-2xl w-full h-auto"
         />
       </div>
-    </div>
+    </Link>
   );
 };
 
