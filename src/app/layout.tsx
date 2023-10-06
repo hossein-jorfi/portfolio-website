@@ -24,9 +24,7 @@ export default function RootLayout({
 
   return (
     <html>
-      <body
-        className={`${inter.className} bg-light w-full min-h-screen`}
-      >
+      <body className={`${inter.className} bg-light w-full min-h-screen`}>
         <NavBar>
           {children}
           <Footer />
