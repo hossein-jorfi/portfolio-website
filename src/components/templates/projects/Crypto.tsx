@@ -17,9 +17,9 @@ const Crypto = () => {
         <div className="mt-10">
           <AnimatedText
             title="Description"
-            className="!text-4xl sm:!text-5xl md:!text-8xl"
+            className="text-left !text-3xl sm:!text-6xl"
           />
-          <p className="mt-3 text-justify text-xl text-dark dark:text-light">
+          <p className="mt-3 font-semibold text-xl text-dark dark:text-light">
             This site show data of the coin dynamically. if you put symbol of
             the coin in end point you can see information about the coin like
             domain/BTC domain/ETH. i used Next.js and bootstrap to make it. its

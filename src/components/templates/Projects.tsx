@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <div className="my-container bg-light dark:bg-dark min-h-screen">
       <div className="pt-10 pb-36">
-        <AnimatedText title="Projects" className="text-left text-5xl" />
+        <AnimatedText title="Projects" className="text-left !text-5xl sm:!text-6xl md:!text-8xl" />
         <div className="sm:grid grid-cols-12 gap-10 mt-8 px-2 sm:px-0">
           <ProjectCard
             routeId="crypto"

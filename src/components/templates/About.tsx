@@ -318,14 +318,14 @@ const About = () => {
   return (
     <div className="my-container min-h-screen w-full dark:bg-dark">
       <div>
-        <AnimatedText title="About Me" className="text-left text-5xl" />
+        <AnimatedText title="About Me" className="text-left !text-5xl sm:!text-6xl md:!text-8xl" />
         {/* flex justify-between items-center space-x-10 */}
         <div className="mt-10 flex flex-col md:flex-row justify-between items-center space-y-5 md:space-x-10">
           {/* <Paragraph
             className="w-full md:w-1/2"
             value="My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready to work as Front-End Developer, Now its been about 3 years that i started learning programming, and about 2 years that i focused on Front End developing, I love learning new technology, Individual development, Team Work , and i open to work in person (Tehran) and Remote"
           /> */}
-          <div className="w-full md:w-1/2 text-dark dark:text-light font-bold text-xl text-justify">
+          <div className="w-full md:w-1/2 text-dark dark:text-light font-bold text-xl">
             My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready
             to work as Front-End Developer, Now its been about 3 years that i
             started learning programming, and about 2 years that i focused on
