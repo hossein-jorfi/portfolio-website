@@ -160,8 +160,9 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
               </svg>
             </motion.a>
             <motion.a
+              target="_blank"
               className="w-fit"
-              href="#"
+              href="https://t.me/hosseinjorfi"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
