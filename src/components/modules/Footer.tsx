@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heartGif from "../../../public/gif/icons8-heart.gif";
+import heartGif from "../../../public/gif/heart.png";
 
 const Footer = () => {
   return (
