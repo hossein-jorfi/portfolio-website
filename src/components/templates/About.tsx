@@ -318,7 +318,10 @@ const About = () => {
   return (
     <div className="my-container min-h-screen w-full dark:bg-dark">
       <div>
-        <AnimatedText title="About Me" className="text-left !text-5xl sm:!text-6xl md:!text-8xl" />
+        <AnimatedText
+          title="About Me"
+          className="text-left !text-5xl sm:!text-6xl md:!text-8xl"
+        />
         {/* flex justify-between items-center space-x-10 */}
         <div className="mt-10 flex flex-col md:flex-row justify-between items-center space-y-5 md:space-x-10">
           {/* <Paragraph

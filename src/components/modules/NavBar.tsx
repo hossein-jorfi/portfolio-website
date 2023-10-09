@@ -427,7 +427,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
                 </motion.a>
                 <motion.p
                   className={`cursor-pointer p-1 rounded-full ${
-                    theme === "dark" ? "bg-light" : "bg-dark"
+                    theme === "dark" ? "bg-dark" : "bg-light"
                   }`}
                   onClick={themeToggle}
                   whileHover={{ y: -2 }}
@@ -440,7 +440,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6 text-dark"
+                      className="w-6 h-6 text-light"
                     >
                       <path
                         strokeLinecap="round"
@@ -455,7 +455,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6 text-light"
+                      className="w-6 h-6 text-dark"
                     >
                       <path
                         strokeLinecap="round"
