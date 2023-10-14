@@ -270,7 +270,7 @@ const skillItems = [
         ></path>
       </svg>
     ),
-    title: "tailwindcss",
+    title: "Bootstrap",
   },
   {
     id: 8,
