@@ -14,7 +14,7 @@ const ProjectDetailLink = ({
         target="_blank"
         className="rounded-lg bg-dark p-0 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark  sm:px-4 sm:text-base flex justify-center items-center"
       >
-        Visit Projects
+        Visit Project
       </Link>
       <Link href={github} target="_blank">
         <svg
