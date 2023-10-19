@@ -211,7 +211,7 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
-            routeId="2"
+            routeId="#"
             image={cart_context}
             title="Cart (Context)"
             icons={[
@@ -298,7 +298,7 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
-            routeId="3"
+            routeId="#"
             image={cart_redux}
             title="Cart (Redux)"
             icons={[
@@ -385,7 +385,7 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
-            routeId="weblog"
+            routeId="#"
             image={weblogImage}
             title="Weblog"
             icons={[

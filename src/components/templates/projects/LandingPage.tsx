@@ -21,7 +21,7 @@ const LandingPage = () => {
           />
           <p className="mt-3 font-semibold text-xl text-dark dark:text-light">
             this is a simple landing page, its dont have any complecated section
-            or fetching dada, i did this project just to improve my css skill
+            or fetching data, i did this project just to improve my css skill
             and turn a design to code . its fully responsive and i used react
             and tailwind css
           </p>
