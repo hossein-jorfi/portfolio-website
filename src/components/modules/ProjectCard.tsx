@@ -7,15 +7,20 @@ const ProjectCard = ({
   title,
   image,
   routeId,
+  blank,
 }: {
   icons: any;
   title: string;
   routeId: string;
   image: StaticImageData;
+  blank: boolean;
 }) => {
   return (
     <div className="mt-7 sm:mt-0 h-max w-full relative sm:col-span-6 rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-4">
-      <Link href={`/Projects/${routeId}`} className="">
+      <Link
+        href={blank ? `${routeId}` : `/Projects/${routeId}`}
+        target={blank ? "_blank" : "_self"}
+      >
         <div className="absolute top-0 -right-3 w-[102%] h-[103%] rounded-[1.5rem] bg-dark dark:bg-light -z-10"></div>
 
         <div className="flex justify-between items-center">

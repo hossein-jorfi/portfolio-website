@@ -21,6 +21,7 @@ const Projects = () => {
         />
         <div className="sm:grid grid-cols-12 gap-10 mt-8 px-2 sm:px-0">
           <ProjectCard
+            blank={false}
             routeId="crypto"
             image={cryptoImage}
             title="Crypto"
@@ -113,6 +114,7 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
+            blank={false}
             routeId="landing-page"
             image={landing_page}
             title="Landing Page"
@@ -211,7 +213,8 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
-            routeId="#"
+            blank={true}
+            routeId="https://imaginative-pothos-749273.netlify.app/"
             image={cart_context}
             title="Cart (Context)"
             icons={[
@@ -298,7 +301,8 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
-            routeId="#"
+            blank={true}
+            routeId="https://tangerine-concha-fe8817.netlify.app/"
             image={cart_redux}
             title="Cart (Redux)"
             icons={[
@@ -385,7 +389,8 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
-            routeId="#"
+            blank={true}
+            routeId="https://adorable-cheesecake-3c749d.netlify.app/"
             image={weblogImage}
             title="Weblog"
             icons={[
