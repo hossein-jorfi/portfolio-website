@@ -278,20 +278,26 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
         <header className="bg-light dark:bg-dark dark:text-light sm:hidden my-container py-8 flex justify-between items-center">
           <div
             onClick={clickHandler}
-            className="cursor-pointer flex flex-col justify-center items-center p-3"
+            className="cursor-pointer flex flex-col justify-center items-center p-3 z-50"
           >
             <span
-              className={`transition-all duration-300 ease-out bg-dark dark:bg-light block h-0.5 w-6 rounded-sm ${
+              className={`transition-all duration-300 ease-out bg-dark dark:bg-light block ${
+                isOpen && "bg-light dark:!bg-dark"
+              } h-0.5 w-6 rounded-sm ${
                 isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
               }`}
             ></span>
             <span
-              className={`transition-all duration-300 ease-out bg-dark dark:bg-light block h-0.5 w-6 rounded-sm my-0.5 ${
+              className={`transition-all duration-300 ease-out bg-dark dark:bg-light ${
+                isOpen && "bg-light dark:!bg-dark"
+              } block h-0.5 w-6 rounded-sm my-0.5 ${
                 isOpen ? "opacity-0" : "opacity-100"
               }`}
             ></span>
             <span
-              className={`transition-all duration-300 ease-out bg-dark dark:bg-light block h-0.5 w-6 rounded-sm ${
+              className={`transition-all duration-300 ease-out bg-dark dark:bg-light ${
+                isOpen && "bg-light dark:!bg-dark"
+              } block h-0.5 w-6 rounded-sm ${
                 isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
               }`}
             ></span>
@@ -301,7 +307,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
             <motion.div
               initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
               animate={{ scale: 1, opacity: 1 }}
-              className={`min-w-[100vw] min-h-[100vh] flex flex-col justify-center items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/80 dark:bg-light/80 dark:text-dark backdrop-blur-md text-light z-50`}
+              className={`min-w-[100vw] min-h-[100vh] flex flex-col justify-center items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/80 dark:bg-light/80 dark:text-dark backdrop-blur-md text-light z-40`}
             >
               <div className="flex flex-col justify-center items-center space-y-8">
                 <CutomMobileLink
@@ -467,27 +473,6 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
                   )}
                 </motion.p>
               </nav>
-              {/* close button */}
-              <div
-                onClick={clickHandler}
-                className="cursor-pointer flex flex-col justify-center items-center p-3  absolute top-10 left-5"
-              >
-                <span
-                  className={`transition-all duration-300 ease-out bg-light dark:bg-dark block h-0.5 w-6 rounded-sm ${
-                    isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-                  }`}
-                ></span>
-                <span
-                  className={`transition-all duration-300 ease-out bg-light dark:bg-dark block h-0.5 w-6 rounded-sm my-0.5 ${
-                    isOpen ? "opacity-0" : "opacity-100"
-                  }`}
-                ></span>
-                <span
-                  className={`transition-all duration-300 ease-out bg-light dark:bg-dark block h-0.5 w-6 rounded-sm ${
-                    isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-                  }`}
-                ></span>
-              </div>
             </motion.div>
           )}
 
