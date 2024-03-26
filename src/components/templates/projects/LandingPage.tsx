@@ -1,6 +1,6 @@
 import AnimatedText from "@/components/elements/AnimatedText";
 import ProjectDetailLink from "@/components/elements/ProjectDetailLink";
-import landingPageImage from "../../../../public/projectsImages/LandingPage/landing.png";
+import landingPageImage from "../../../../public/projectsImages/LandingPage/landing.webp";
 import Image from "next/image";
 
 const LandingPage = () => {
