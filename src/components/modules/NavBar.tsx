@@ -131,7 +131,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
             <CutomLink href="/" title="Home" />
             <CutomLink href="/About" title="About" />
             <CutomLink href="/Projects" title="Projects" />
-            <CutomLink href="/Articles" title="Articles" />
+            {/* <CutomLink href="/Articles" title="Articles" /> */}
           </motion.nav>
           <nav className="flex justify-center items-center space-x-4">
             <motion.a
