@@ -328,12 +328,12 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
                   title="Projects"
                   className2="bg-light dark:!bg-dark"
                 />
-                <CutomMobileLink
+                {/* <CutomMobileLink
                   setIsOpen={setIsOpen}
                   href="/Articles"
                   title="Articles"
                   className2="bg-light dark:!bg-dark"
-                />
+                /> */}
               </div>
               <nav className="mt-10 flex justify-center items-center space-x-4">
                 <motion.a
