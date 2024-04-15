@@ -329,7 +329,7 @@ const About = () => {
             value="My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready to work as Front-End Developer, Now its been about 3 years that i started learning programming, and about 2 years that i focused on Front End developing, I love learning new technology, Individual development, Team Work , and i open to work in person (Tehran) and Remote"
           /> */}
           <div className="w-full md:w-1/2 text-dark dark:text-light font-bold text-xl">
-            My name is Hossein Jorfi, Im 19 years old and im from iran, Im ready
+            My name is Hossein Jorfi, Im 20 years old and im from iran, Im ready
             to work as Front-End Developer, Now its been about 3 years that i
             started learning programming, and about 2 years that i focused on
             Front End developing, I love learning new technology, Individual
