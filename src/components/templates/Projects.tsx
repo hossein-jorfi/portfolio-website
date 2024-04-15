@@ -10,7 +10,7 @@ import weblogImage from "../../../public/projectsImages/Weblog/weblog.png";
 import cart_context from "../../../public/projectsImages/CartContext/cart-context.png";
 import cart_redux from "../../../public/projectsImages/CartRedux/cart_redux.png";
 import landing_page from "../../../public/projectsImages/LandingPage/landing.webp";
-import botlyzer from "../../../public/projectsImages/LandingPage/landing.webp";
+import botlyzer from "../../../public/projectsImages/BotLyzer/bot2.png";
 
 const Projects = () => {
   return (
@@ -24,7 +24,7 @@ const Projects = () => {
           <ProjectCard
             blank={false}
             routeId="crypto"
-            image={cryptoImage}
+            image={botlyzer}
             title="Crypto"
             icons={[
               {
