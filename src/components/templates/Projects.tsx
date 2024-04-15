@@ -23,7 +23,7 @@ const Projects = () => {
         <div className="sm:grid grid-cols-12 gap-10 mt-8 px-2 sm:px-0">
           <ProjectCard
             blank={false}
-            routeId="crypto"
+            routeId="botlyzer"
             image={botlyzer}
             title="Crypto"
             icons={[
