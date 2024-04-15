@@ -13,6 +13,7 @@ import traderBotsImage from "../../../../public/projectsImages/BotLyzer/bot_trad
 import pricingImage from "../../../../public/projectsImages/BotLyzer/bot_pricing.png";
 import pricing2Image from "../../../../public/projectsImages/BotLyzer/bot_pricong_2.png";
 import portfolioImage from "../../../../public/projectsImages/BotLyzer/bot_portfolio.png";
+import ImageModal from "@/components/elements/ImageModal";
 
 const Botlyzer = () => {
   return (
@@ -44,16 +45,36 @@ const Botlyzer = () => {
           className="text-left !text-3xl sm:!text-5xl"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <Image src={autoTradingImage} alt="project image" />
-          <Image src={tradeSimImage} alt="project image" />
-          <Image src={createStartegyImage} alt="project image" />
-          <Image src={traderBotsImage} alt="project image" />
-          <Image src={signalImage} alt="project image" />
-          <Image src={login} alt="project image" />
-          <Image src={modalImage} alt="project image" />
-          <Image src={pricingImage} alt="project image" />
-          <Image src={pricing2Image} alt="project image" />
-          <Image src={portfolioImage} alt="project image" />
+          <ImageModal>
+            <Image src={autoTradingImage} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={tradeSimImage} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={createStartegyImage} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={traderBotsImage} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={signalImage} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={login} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={modalImage} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={pricingImage} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={pricing2Image} alt="project image" />
+          </ImageModal>
+          <ImageModal>
+            <Image src={portfolioImage} alt="project image" />
+          </ImageModal>
         </div>
       </div>
     </div>
