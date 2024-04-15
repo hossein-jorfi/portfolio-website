@@ -10,7 +10,6 @@ type ImageModalProps = {
 const ImageModal = ({ children }: ImageModalProps) => {
   const [showModal, setShowModal] = useState(false);
 
-  console.log(showModal);
   return (
     <div>
       <div onClick={() => setShowModal(true)} className="cursor-pointer">
