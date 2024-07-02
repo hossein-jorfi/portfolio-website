@@ -11,7 +11,7 @@ const page = ({
       if (projectId === "crypto") return <Crypto />
       if (projectId === "weblog") return <Weblog />
       if (projectId === "landing-page") return <LandingPage />
-      if (projectId === "botlyzer") return <Botlyzer />
+      // if (projectId === "botlyzer") return <Botlyzer />
 };
 
 export default page;
