@@ -21,7 +21,7 @@ const Projects = () => {
           className="text-left !text-5xl sm:!text-6xl md:!text-8xl"
         />
         <div className="sm:grid grid-cols-12 gap-10 mt-8 px-2 sm:px-0">
-          <ProjectCard
+          {/* <ProjectCard
             blank={false}
             routeId="botlyzer"
             image={botlyzer}
@@ -119,7 +119,7 @@ const Projects = () => {
                 ),
               },
             ]}
-          />
+          /> */}
           <ProjectCard
             blank={false}
             routeId="crypto"
