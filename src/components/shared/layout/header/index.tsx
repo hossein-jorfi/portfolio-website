@@ -1,4 +1,4 @@
-import ThemeToggle from "@/src/components/shared/theme-toggle";
+import ThemeToggle from "@/components/shared/theme-toggle";
 
 const Header = () => {
   return (
