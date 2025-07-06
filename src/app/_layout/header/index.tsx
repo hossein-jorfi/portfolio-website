@@ -1,5 +1,11 @@
+import ThemeToggle from "@/src/components/shared/theme-toggle";
+
 const Header = () => {
-  return <div>Header</div>;
+  return (
+    <div>
+      <ThemeToggle />
+    </div>
+  );
 };
 
 export default Header;
