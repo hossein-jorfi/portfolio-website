@@ -2,7 +2,7 @@ import ThemeToggle from "@/components/shared/theme-toggle";
 
 const Header = () => {
   return (
-    <div>
+    <div className="app-container">
       <ThemeToggle />
     </div>
   );
