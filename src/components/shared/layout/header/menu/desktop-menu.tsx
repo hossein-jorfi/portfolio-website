@@ -1,9 +1,15 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { CodeXml } from "lucide-react";
 import { menuItems } from ".";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 const DesktopMenu = () => {
+  const pathname = usePathname();
+
   return (
     <div className="flex items-center gap-2">
       <Button variant="ghost" size="icon">
@@ -13,7 +19,10 @@ const DesktopMenu = () => {
         <Button
           variant="ghost"
           size="sm"
-          className="font-semibold"
+          className={cn(
+            "font-semibold",
+            pathname === item.href && "bg-accent"
+          )}
           key={index}
           asChild
         >
