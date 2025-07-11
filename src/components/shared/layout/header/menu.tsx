@@ -7,10 +7,11 @@ const Menu = () => {
       <Button variant="ghost" size="icon">
         <Code />
       </Button>
-      <Button variant="ghost">Page 1</Button>
-      <Button variant="ghost">Page 2</Button>
-      <Button variant="ghost">Page 3</Button>
-      <Button variant="ghost">Page 4</Button>
+      {Array.from({ length: 5 }).map((_, index) => (
+        <Button variant="ghost" size="sm" className="font-semibold" key={index}>
+          Page {index + 1}
+        </Button>
+      ))}
     </div>
   );
 };
