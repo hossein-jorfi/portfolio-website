@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CodeXml } from "lucide-react";
+import { menuItems } from ".";
 
 const DesktopMenu = () => {
   return (
@@ -7,9 +8,9 @@ const DesktopMenu = () => {
       <Button variant="ghost" size="icon">
         <CodeXml className="size-5" />
       </Button>
-      {Array.from({ length: 5 }).map((_, index) => (
+      {menuItems.map((item, index) => (
         <Button variant="ghost" size="sm" className="font-semibold" key={index}>
-          Page {index + 1}
+          {item.label}
         </Button>
       ))}
     </div>
