@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CodeXml } from "lucide-react";
 
-const Menu = () => {
+const DesktopMenu = () => {
   return (
     <div className="flex items-center gap-2">
       <Button variant="ghost" size="icon">
@@ -16,4 +16,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default DesktopMenu;
