@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { H1, H3 } from "@/components/ui/typography";
 import { ArrowRight } from "lucide-react";
+import DashboardPreview from "./_home/dashboard-preview";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
           Contact <ArrowRight />
         </Button>
       </div>
+
+      <DashboardPreview />
     </div>
   );
 }
