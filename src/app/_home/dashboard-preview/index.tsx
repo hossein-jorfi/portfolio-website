@@ -1,39 +1,12 @@
-import { DashboardSidebar } from "./components/dashboard-sidebar";
-import { ChartAreaInteractive } from "./components/chart-area-interactive";
-import { DataTable } from "./components/data-tabale";
-// import { SectionCards } from "@/components/section-cards";
-import { SiteHeader } from "./components/site-header";
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-
-import data from "./data.json";
-
 const DashboardPreview = () => {
   return (
-    <div className="overflow-hidden w-full relative">
-      <SidebarProvider
-        style={
-          {
-            "--sidebar-width": "calc(var(--spacing) * 72)",
-            "--header-height": "calc(var(--spacing) * 12)",
-          } as React.CSSProperties
-        }
-      >
-        <DashboardSidebar variant="inset" />
-        <SidebarInset>
-          <SiteHeader />
-          <div className="flex flex-1 flex-col">
-            <div className="@container/main flex flex-1 flex-col gap-2">
-              <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
-                {/* <SectionCards /> */}
-                <div className="px-4 lg:px-6">
-                  <ChartAreaInteractive />
-                </div>
-                <DataTable data={data} />
-              </div>
-            </div>
-          </div>
-        </SidebarInset>
-      </SidebarProvider>
+    <div className="overflow-hidden w-full mt-20 mb-10 rounded-lg">
+      <iframe
+        src="https://ui.shadcn.com/view/dashboard-01"
+        height="1000px"
+        loading="lazy"
+        className="bg-background no-scrollbar relative z-20 w-full"
+      ></iframe>
     </div>
   );
 };
