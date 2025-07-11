@@ -1,7 +1,6 @@
 import ThemeToggle from "@/components/shared/theme-toggle";
 import Menu from "./menu";
-import { Button } from "@/components/ui/button";
-import { DownloadIcon } from "lucide-react";
+import ResumeButton from "../../resume-button";
 
 const Header = () => {
   return (
@@ -9,9 +8,7 @@ const Header = () => {
       <Menu />
 
       <div className="flex h-4 items-center space-x-2">
-        <Button size="sm">
-          <DownloadIcon /> Resume
-        </Button>
+        <ResumeButton />
         <ThemeToggle />
       </div>
     </div>
