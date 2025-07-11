@@ -8,9 +8,9 @@ const Header = () => {
     <div className="app-container py-4 flex items-center justify-between">
       <Menu />
 
-      <div className="flex h-4 items-center space-x-3">
+      <div className="flex h-4 items-center space-x-2">
         <Button size="sm">
-          <DownloadIcon /> Download CV
+          <DownloadIcon /> Resume
         </Button>
         <ThemeToggle />
       </div>
