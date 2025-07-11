@@ -152,7 +152,7 @@ const data = {
 
 export function DashboardSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="offcanvas" {...props}>
+    <Sidebar collapsible="offcanvas" {...props} className="!relative">
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
