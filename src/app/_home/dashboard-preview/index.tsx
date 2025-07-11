@@ -1,5 +1,5 @@
-import { AppSidebar } from "@/components/app-sidebar";
-import { ChartAreaInteractive } from "@/components/chart-area-interactive";
+import { DashboardSidebar } from "./components/dashboard-sidebar";
+import { ChartAreaInteractive } from "./components/chart-area-interactive";
 import { DataTable } from "@/components/data-table";
 import { SectionCards } from "@/components/section-cards";
 import { SiteHeader } from "@/components/site-header";
@@ -17,7 +17,7 @@ const DashboardPreview = () => {
         } as React.CSSProperties
       }
     >
-      <AppSidebar variant="inset" />
+      <DashboardSidebar variant="inset" />
       <SidebarInset>
         <SiteHeader />
         <div className="flex flex-1 flex-col">
