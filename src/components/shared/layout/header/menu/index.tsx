@@ -1,4 +1,5 @@
 import DesktopMenu from "./desktop-menu";
+import MobileMenu from "./mobile-menu";
 
 export const menuItems = [
   {
@@ -28,7 +29,12 @@ export const menuItems = [
 ];
 
 const Menu = () => {
-  return <DesktopMenu />;
+  return (
+    <>
+      <DesktopMenu />
+      <MobileMenu />
+    </>
+  );
 };
 
 export default Menu;
