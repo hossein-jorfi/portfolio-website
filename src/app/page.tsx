@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { H1, H3 } from "@/components/ui/typography";
 import { ArrowRight } from "lucide-react";
-import CardsDemo from "./_home/cards-demo";
+import {CardsDemo} from "./_home/cards";
 
 export default function Home() {
   return (
