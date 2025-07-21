@@ -11,7 +11,7 @@ const experienceItems: ExperienceItemProps[] = [
       end: "Ordibehesht 1404",
     },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis, error necessitatibus quod sequi accusamus provident, pariatur commodi doloremque quibusdam a vel unde harum architecto eaque, fuga cumque laborum fugiat.",
+      "The website on which I collaborated with this team was a cryptocurrency trading platform, and I held the responsibility for the application logic. This encompassed managing all routing, API calls, authorization processes, as well as real-time functionalities such as websockets or Pusher events, among other features.",
     projects: [
       {
         name: "Project 1",
