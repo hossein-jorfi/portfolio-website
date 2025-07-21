@@ -3,7 +3,7 @@ import { CalendarDays, Building2, Code2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Small } from "@/components/ui/typography";
+import { P } from "@/components/ui/typography";
 
 interface Project {
   name: string;
@@ -43,7 +43,7 @@ export default function ExperienceItem({
           {position}
         </Badge>
 
-        <Small className="mt-3">{description}</Small>
+        <P className="!mt-1 leading-6">{description}</P>
       </CardHeader>
 
       <CardContent className="space-y-4">
