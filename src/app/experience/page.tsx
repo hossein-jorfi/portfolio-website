@@ -4,8 +4,8 @@ import ExperienceItem, {
 
 const experienceItems: ExperienceItemProps[] = [
   {
-    company: "Company 1",
-    position: "Position 1",
+    company: "Maroon Moshaver Arjan",
+    position: "Front End Developer",
     jalaliDate: {
       start: "1402/01/01",
       end: "1402/01/01",

@@ -1,5 +1,5 @@
 // ExperienceItem.tsx
-import { CalendarDays, Building2, Briefcase } from "lucide-react";
+import { CalendarDays, Building2, Code2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -29,29 +29,28 @@ export default function ExperienceItem({
   return (
     <Card className="w-full mt-6">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Building2 className="h-5 w-5 text-muted-foreground" />
-          {company}
-        </CardTitle>
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Briefcase className="h-4 w-4" />
-          <span>{position}</span>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
-          <div className="flex items-center gap-1">
-            <CalendarDays className="h-4 w-4" />
-            <span>
+        <div className="flex items-center justify-between gap-5">
+          <CardTitle className="flex items-center gap-2 text-2xl">
+            <Building2 className="size-6" />
+            {company}
+          </CardTitle>
+          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
+            <Badge variant="outline" size="md">
+              <CalendarDays className="h-4 w-4" />
               {jalaliDate.start} – {jalaliDate.end}
-            </span>
-          </div>
-          <div className="flex items-center gap-1">
-            <CalendarDays className="h-4 w-4" />
-            <span>
-              {englishDate.start} – {englishDate.end}
-            </span>
+            </Badge>
+            <Badge variant="outline" size="md">
+              <CalendarDays className="h-4 w-4" />
+              <span>
+                {englishDate.start} – {englishDate.end}
+              </span>
+            </Badge>
           </div>
         </div>
+        <Badge size="md">
+          <Code2 />
+          {position}
+        </Badge>
       </CardHeader>
 
       <CardContent className="space-y-4">
