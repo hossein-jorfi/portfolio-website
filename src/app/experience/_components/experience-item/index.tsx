@@ -12,8 +12,7 @@ interface Project {
 export interface ExperienceItemProps {
   company: string;
   position: string;
-  jalaliDate: { start: string; end: string };
-  englishDate: { start: string; end: string };
+  date: { start: string; end: string };
   description: string;
   projects: Project[];
 }
@@ -21,8 +20,7 @@ export interface ExperienceItemProps {
 export default function ExperienceItem({
   company,
   position,
-  jalaliDate,
-  englishDate,
+  date,
   description,
   projects,
 }: ExperienceItemProps) {
@@ -34,18 +32,10 @@ export default function ExperienceItem({
             <Building2 className="size-6" />
             {company}
           </CardTitle>
-          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
-            <Badge variant="outline" size="md">
-              <CalendarDays className="h-4 w-4" />
-              {jalaliDate.start} – {jalaliDate.end}
-            </Badge>
-            <Badge variant="outline" size="md">
-              <CalendarDays className="h-4 w-4" />
-              <span>
-                {englishDate.start} – {englishDate.end}
-              </span>
-            </Badge>
-          </div>
+          <Badge variant="outline" size="md">
+            <CalendarDays className="h-4 w-4" />
+            {date.start} – {date.end}
+          </Badge>
         </div>
         <Badge size="md">
           <Code2 />

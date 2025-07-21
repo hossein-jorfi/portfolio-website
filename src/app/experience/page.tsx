@@ -6,13 +6,9 @@ const experienceItems: ExperienceItemProps[] = [
   {
     company: "Maroon Moshaver Arjan",
     position: "Front End Developer",
-    jalaliDate: {
-      start: "1402/01/01",
-      end: "1402/01/01",
-    },
-    englishDate: {
-      start: "2023/01/01",
-      end: "2023/01/01",
+    date: {
+      start: "Azar 1402",
+      end: "Ordibehesht 1404",
     },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis, error necessitatibus quod sequi accusamus provident, pariatur commodi doloremque quibusdam a vel unde harum architecto eaque, fuga cumque laborum fugiat.",
@@ -30,13 +26,9 @@ const experienceItems: ExperienceItemProps[] = [
   {
     company: "Company 2",
     position: "Position 2",
-    jalaliDate: {
-      start: "1402/01/01",
-      end: "1402/01/01",
-    },
-    englishDate: {
-      start: "2023/01/01",
-      end: "2023/01/01",
+    date: {
+      start: "Ordibehesht 1404",
+      end: "Current",
     },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis, error necessitatibus quod sequi accusamus provident, pariatur commodi doloremque quibusdam a vel unde harum architecto eaque, fuga cumque laborum fugiat.",
