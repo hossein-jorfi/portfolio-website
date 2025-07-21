@@ -27,7 +27,7 @@ export default function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <Card className="w-full mt-6">
-      <CardHeader>
+      <CardHeader className="gap-y-3.5">
         <div className="flex items-center justify-between gap-5">
           <CardTitle className="flex items-center gap-2 text-2xl">
             <Building2 className="size-6" />
@@ -43,7 +43,7 @@ export default function ExperienceItem({
           {position}
         </Badge>
 
-        <P className="!mt-1 leading-6">{description}</P>
+        <P className="!mt-0 leading-6">{description}</P>
       </CardHeader>
 
       <CardContent className="space-y-4">
