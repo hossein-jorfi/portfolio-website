@@ -1,56 +1,83 @@
+// ExperienceItem.tsx
+import { CalendarDays, Building2, Briefcase } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+
 interface Project {
-      name: string;
-      description: string;
-    }
+  name: string;
+  description: string;
+}
 
 export interface ExperienceItemProps {
   company: string;
   position: string;
-  jalaliDate: {
-    start: string;
-    end: string;
-  };
-  englishDate: {
-    start: string;
-    end: string;
-  };
+  jalaliDate: { start: string; end: string };
+  englishDate: { start: string; end: string };
   description: string;
   projects: Project[];
 }
 
-const ExperienceItem = ({
+export default function ExperienceItem({
   company,
   position,
   jalaliDate,
   englishDate,
   description,
   projects,
-}: ExperienceItemProps) => {
+}: ExperienceItemProps) {
   return (
-    <div className="mt-10">
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-col gap-1">
-          <h3 className="text-lg font-bold">{company}</h3>
-          <p className="text-sm text-gray-500">{position}</p>
-          <p className="text-sm text-gray-500">
-            {jalaliDate.start} - {jalaliDate.end}
-          </p>
-          <p className="text-sm text-gray-500">
-            {englishDate.start} - {englishDate.end}
-          </p>
+    <Card className="w-full mt-6">
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Building2 className="h-5 w-5 text-muted-foreground" />
+          {company}
+        </CardTitle>
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Briefcase className="h-4 w-4" />
+          <span>{position}</span>
         </div>
-        <p className="text-sm text-gray-500">{description}</p>
-        <div className="flex flex-col gap-2">
-          {projects.map((project) => (
-            <div key={project.name}>
-              <h4 className="text-lg font-bold">{project.name}</h4>
-              <p className="text-sm text-gray-500">{project.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
 
-export default ExperienceItem;
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <div className="flex items-center gap-1">
+            <CalendarDays className="h-4 w-4" />
+            <span>
+              {jalaliDate.start} – {jalaliDate.end}
+            </span>
+          </div>
+          <div className="flex items-center gap-1">
+            <CalendarDays className="h-4 w-4" />
+            <span>
+              {englishDate.start} – {englishDate.end}
+            </span>
+          </div>
+        </div>
+      </CardHeader>
+
+      <CardContent className="space-y-4">
+        <p className="text-sm text-muted-foreground">{description}</p>
+
+        {projects.length > 0 && (
+          <>
+            <Separator />
+            <div className="space-y-3">
+              <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                Projects
+              </h4>
+              {projects.map((p) => (
+                <div key={p.name} className="space-y-1">
+                  <Badge variant="secondary" className="font-semibold">
+                    {p.name}
+                  </Badge>
+                  <p className="text-sm text-muted-foreground">
+                    {p.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+      </CardContent>
+    </Card>
+  );
+}
