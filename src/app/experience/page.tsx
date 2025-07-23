@@ -14,12 +14,14 @@ const experienceItems: ExperienceItemProps[] = [
       "The website on which I collaborated with this team was a cryptocurrency trading platform, and I held the responsibility for the application logic. This encompassed managing all routing, API calls, authorization processes, as well as real-time functionalities such as websockets or Pusher events, among other features.",
     projects: [
       {
-        name: "Project 1",
-        description: "Description 1",
+        name: "Botlyzer",
+        description:
+          "The website on which I collaborated with this team was a cryptocurrency trading platform, and I held the responsibility for the application logic. This encompassed managing all routing, API calls, authorization processes, as well as real-time functionalities such as websockets or Pusher events, among other features.",
       },
       {
-        name: "Project 2",
-        description: "Description 2",
+        name: "Botlyzer 2",
+        description:
+          "The website on which I collaborated with this team was a cryptocurrency trading platform, and I held the responsibility for the application logic. This encompassed managing all routing, API calls, authorization processes, as well as real-time functionalities such as websockets or Pusher events, among other features.",
       },
     ],
   },

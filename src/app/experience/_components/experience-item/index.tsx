@@ -47,7 +47,6 @@ export default function ExperienceItem({
       </CardHeader>
 
       <CardContent className="space-y-4">
-
         {projects.length > 0 && (
           <>
             <Separator />
@@ -56,13 +55,16 @@ export default function ExperienceItem({
                 Projects
               </h4>
               {projects.map((p) => (
-                <div key={p.name} className="space-y-1">
-                  <Badge variant="secondary" className="font-semibold">
-                    {p.name}
-                  </Badge>
-                  <p className="text-sm text-muted-foreground">
-                    {p.description}
-                  </p>
+                <div key={p.name} className="flex items-center gap-7">
+                  <div className="space-y-1">
+                    <p className="text-lg font-semibold">
+                      {p.name}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      {p.description}
+                    </p>
+                  </div>
+                  <div className="border rounded-lg w-full h-[300px]" />
                 </div>
               ))}
             </div>
