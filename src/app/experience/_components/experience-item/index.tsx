@@ -4,19 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { P } from "@/components/ui/typography";
-
-interface Project {
-  name: string;
-  description: string;
-}
-
-export interface ExperienceItemProps {
-  company: string;
-  position: string;
-  date: { start: string; end: string };
-  description: string;
-  projects: Project[];
-}
+import { ExperienceItemProps } from "../../types";
 
 export default function ExperienceItem({
   company,

@@ -1,6 +1,5 @@
-import ExperienceItem, {
-  ExperienceItemProps,
-} from "./_components/experience-item";
+import { ExperienceItemProps } from "./types";
+import ExperienceItem from "./_components/experience-item";
 
 const experienceItems: ExperienceItemProps[] = [
   {
