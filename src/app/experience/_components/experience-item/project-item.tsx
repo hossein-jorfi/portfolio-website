@@ -3,8 +3,8 @@ import { Project } from "../../types";
 
 const ProjectItem = ({ name, description }: Project) => {
   return (
-    <div className="flex items-center gap-7">
-      <div className="space-y-1">
+    <div className="grid grid-cols-3 gap-7">
+      <div className="space-y-1 col-span-2">
         <H4>{name}</H4>
         <Muted>{description}</Muted>
       </div>
