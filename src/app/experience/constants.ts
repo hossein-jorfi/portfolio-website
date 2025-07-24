@@ -14,7 +14,7 @@ export const experienceItems: ExperienceItemProps[] = [
       {
         name: "Botlyzer",
         description:
-          "The website on which I collaborated with this team was a cryptocurrency trading platform, and I held the responsibility for the application logic. This encompassed managing all routing, API calls, authorization processes, as well as real-time functionalities such as websockets or Pusher events, among other features.",
+          "A Crypto Currency Platform. Users enter their Exchange API key in their panel and can manage All Exchanges they have in one app like manageing their assets, Trading with advanced Stop loss and take profit, Creating Stategies With Programming and Logical Conditions and see everything on Tradingview Chart and so many other fechures.",
       },
       {
         name: "Botlyzer 2",
