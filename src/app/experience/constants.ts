@@ -9,7 +9,7 @@ export const experienceItems: ExperienceItemProps[] = [
       end: "Ordibehesht 1404",
     },
     description:
-      "The website on which I collaborated with this team was a cryptocurrency trading platform, and I held the responsibility for the application logic. This encompassed managing all routing, API calls, authorization processes, as well as real-time functionalities such as websockets or Pusher events, among other features.",
+      "This was my first real experience as a front end developer on a team. i learned so many things in that time. some of them because the job itself but moust of them because i forced myself to keep my knowleg up to date with new tecnologis aldo no one wanted that from me, and that is one of the reasons i leaved them because i wanted to work on products with cutting edge tecnolgies and best practices.",
     projects: [
       {
         name: "Botlyzer",
