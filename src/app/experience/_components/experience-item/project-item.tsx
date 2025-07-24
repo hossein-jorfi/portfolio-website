@@ -1,6 +1,7 @@
 import { H4, Large, Muted, Small } from "@/components/ui/typography";
 import { Project } from "../../types";
-import { CheckCircle2 } from "lucide-react";
+import { Dot, NotebookPen, SquareCode } from "lucide-react";
+import { ReactNode } from "react";
 
 const ProjectItem = ({ name, description, responsibilities }: Project) => {
   return (
@@ -14,8 +15,13 @@ const ProjectItem = ({ name, description, responsibilities }: Project) => {
           <QuestionItem
             title="My Responsilties"
             items={responsibilities || []}
+            icon={<SquareCode className="size-5 text-foreground/80" />}
           />
-          <QuestionItem title="What i Learned" items={responsibilities || []} />
+          <QuestionItem
+            title="What i Learned"
+            items={responsibilities || []}
+            icon={<NotebookPen className="size-5 text-foreground/80" />}
+          />
         </div>
       </div>
       <div className="border rounded-lg w-full h-[300px]" />
@@ -25,17 +31,27 @@ const ProjectItem = ({ name, description, responsibilities }: Project) => {
 
 export default ProjectItem;
 
-const QuestionItem = ({ title, items }: { title: string; items: string[] }) => {
+const QuestionItem = ({
+  title,
+  items,
+  icon,
+}: {
+  title: string;
+  items: string[];
+  icon: ReactNode;
+}) => {
   return (
     <div className="space-y-3 rounded-lg p-3 bg-muted shadow-sm">
-      <Large>{title}</Large>
+      <Large className="flex items-center gap-2">
+        {icon} {title}
+      </Large>
       <div className="space-y-2">
         {items?.map((item) => (
           <Small
             key={item}
             className="flex items-center gap-2 text-foreground/80"
           >
-            <CheckCircle2 className="size-4" /> {item}
+            <Dot className="size-5" /> {item}
           </Small>
         ))}
       </div>
