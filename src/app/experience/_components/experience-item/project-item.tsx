@@ -2,6 +2,7 @@ import { H4, Large, Muted, Small } from "@/components/ui/typography";
 import { Project } from "../../types";
 import { CheckCircle, Dot, NotebookPen } from "lucide-react";
 import { ReactNode } from "react";
+import Image from "next/image";
 
 const ProjectItem = ({
   name,
@@ -29,7 +30,15 @@ const ProjectItem = ({
           />
         </div>
       </div>
-      <div className="border rounded-lg w-full h-full" />
+      <div className="flex items-center justify-center">
+        <Image
+          src="/images/botlyzer/bot1.png"
+          alt="Botlyzer"
+          width={500}
+          height={500}
+          className="rounded-lg object-cover"
+        />
+      </div>
     </div>
   );
 };
