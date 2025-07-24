@@ -34,8 +34,8 @@ const ProjectItem = ({
         <Image
           src="/images/botlyzer/bot1.png"
           alt="Botlyzer"
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           className="rounded-lg object-cover"
         />
       </div>

@@ -31,9 +31,21 @@ export const experienceItems: ExperienceItemProps[] = [
         ],
       },
       {
-        name: "Botlyzer 2",
+        name: "Petrochemical Bandar Imam (BIPC)",
         description:
-          "The website on which I collaborated with this team was a cryptocurrency trading platform, and I held the responsibility for the application logic. This encompassed managing all routing, API calls, authorization processes, as well as real-time functionalities such as websockets or Pusher events, among other features.",
+          "Petrochemical have many pipes that need to be monitored and maintained. Every pipe has a liquid or gas that have to be in certen speed and pressure. so they need a dashboard so they can see all the pipes in diffrent ways and if a pipe speed is out of standard range, operator recive a warning notification.",
+        responsibilities: [
+          "API Calls",
+          "Websockets",
+          "Pixel perfect styling",
+          "Working with 3D team",
+        ],
+        learnings: [
+          "Optimize Fast Websockets",
+          "Performance Optimization",
+          "SWR",
+          "MUI advanced customization",
+        ],
       },
     ],
   },
