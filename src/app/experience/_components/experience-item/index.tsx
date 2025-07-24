@@ -3,7 +3,7 @@ import { CalendarDays, Building2, Code2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { P } from "@/components/ui/typography";
+import { H4, Muted, P } from "@/components/ui/typography";
 import { ExperienceItemProps } from "../../types";
 
 export default function ExperienceItem({
@@ -39,18 +39,14 @@ export default function ExperienceItem({
           <>
             <Separator />
             <div className="space-y-3">
-              <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+              <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 Projects
-              </h4>
+              </p>
               {projects.map((p) => (
                 <div key={p.name} className="flex items-center gap-7">
                   <div className="space-y-1">
-                    <p className="text-lg font-semibold">
-                      {p.name}
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {p.description}
-                    </p>
+                    <H4>{p.name}</H4>
+                    <Muted>{p.description}</Muted>
                   </div>
                   <div className="border rounded-lg w-full h-[300px]" />
                 </div>
