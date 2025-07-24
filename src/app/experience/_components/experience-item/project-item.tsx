@@ -1,6 +1,6 @@
 import { H4, Large, Muted, Small } from "@/components/ui/typography";
 import { Project } from "../../types";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const ProjectItem = ({ name, description, responsibilities }: Project) => {
   return (
@@ -19,7 +19,7 @@ const ProjectItem = ({ name, description, responsibilities }: Project) => {
                   key={responsibility}
                   className="flex items-center gap-2 text-foreground/80"
                 >
-                  <CheckCircle className="size-4" /> {responsibility}
+                  <CheckCircle2 className="size-4" /> {responsibility}
                 </Small>
               ))}
             </div>
