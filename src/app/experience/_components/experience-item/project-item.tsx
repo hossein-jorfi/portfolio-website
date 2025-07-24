@@ -10,21 +10,13 @@ const ProjectItem = ({ name, description, responsibilities }: Project) => {
           <H4>{name}</H4>
           <Muted>{description}</Muted>
         </div>
-        {responsibilities && (
-          <div className="space-y-3">
-            <Large>My Responsilties</Large>
-            <div className="space-y-2">
-              {responsibilities.map((responsibility) => (
-                <Small
-                  key={responsibility}
-                  className="flex items-center gap-2 text-foreground/80"
-                >
-                  <CheckCircle2 className="size-4" /> {responsibility}
-                </Small>
-              ))}
-            </div>
-          </div>
-        )}
+        <div className="grid grid-cols-2 gap-3">
+          <QuestionItem
+            title="My Responsilties"
+            items={responsibilities || []}
+          />
+          <QuestionItem title="What i Learned" items={responsibilities || []} />
+        </div>
       </div>
       <div className="border rounded-lg w-full h-[300px]" />
     </div>
@@ -32,3 +24,21 @@ const ProjectItem = ({ name, description, responsibilities }: Project) => {
 };
 
 export default ProjectItem;
+
+const QuestionItem = ({ title, items }: { title: string; items: string[] }) => {
+  return (
+    <div className="space-y-3 border rounded-lg p-3">
+      <Large>{title}</Large>
+      <div className="space-y-2">
+        {items?.map((item) => (
+          <Small
+            key={item}
+            className="flex items-center gap-2 text-foreground/80"
+          >
+            <CheckCircle2 className="size-4" /> {item}
+          </Small>
+        ))}
+      </div>
+    </div>
+  );
+};
