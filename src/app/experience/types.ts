@@ -1,6 +1,7 @@
 export interface Project {
   name: string;
   description: string;
+  responsibilities?: string[];
 }
 
 export interface ExperienceItemProps {

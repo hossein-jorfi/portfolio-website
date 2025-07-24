@@ -1,4 +1,4 @@
-import { H4, Large, Muted } from "@/components/ui/typography";
+import { H4, Muted, Small } from "@/components/ui/typography";
 import { Project } from "../../types";
 
 const ProjectItem = ({ name, description }: Project) => {
@@ -10,7 +10,7 @@ const ProjectItem = ({ name, description }: Project) => {
           <Muted>{description}</Muted>
         </div>
         <div>
-          <Large>My Responsilties</Large>
+          <Small>My Responsilties</Small>
         </div>
       </div>
       <div className="border rounded-lg w-full h-[300px]" />

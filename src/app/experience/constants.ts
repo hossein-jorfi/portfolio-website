@@ -15,6 +15,13 @@ export const experienceItems: ExperienceItemProps[] = [
         name: "Botlyzer",
         description:
           "A Crypto Currency Platform. Users enter their Exchange API key in their panel and can manage All Exchanges they have in one app like manageing their assets, Trading with advanced Stop loss and take profit, Creating Stategies With Programming and Logical Conditions and see everything on Tradingview Chart and so many other fechures.",
+        responsibilities: [
+          "App Logic",
+          "API Calls",
+          "Authentication & Authorization",
+          "Routing",
+          "Maintaining Legacy Code",
+        ],
       },
       {
         name: "Botlyzer 2",
