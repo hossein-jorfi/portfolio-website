@@ -22,6 +22,13 @@ export const experienceItems: ExperienceItemProps[] = [
           "Routing",
           "Maintaining Legacy Code",
         ],
+        learnings: [
+          "Team Work",
+          "Real time functionalities",
+          "Working on Legacy Code",
+          "Advanced State Management",
+          "Tradingview Advanced Chart",
+        ],
       },
       {
         name: "Botlyzer 2",

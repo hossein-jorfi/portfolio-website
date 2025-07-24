@@ -2,6 +2,7 @@ export interface Project {
   name: string;
   description: string;
   responsibilities?: string[];
+  learnings?: string[];
 }
 
 export interface ExperienceItemProps {

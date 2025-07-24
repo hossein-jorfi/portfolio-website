@@ -3,7 +3,7 @@ import { Project } from "../../types";
 import { CheckCircle, Dot, NotebookPen } from "lucide-react";
 import { ReactNode } from "react";
 
-const ProjectItem = ({ name, description, responsibilities }: Project) => {
+const ProjectItem = ({ name, description, responsibilities, learnings }: Project) => {
   return (
     <div className="grid grid-cols-3 gap-7 border p-4 rounded-xl">
       <div className="space-y-4 col-span-2">
@@ -19,7 +19,7 @@ const ProjectItem = ({ name, description, responsibilities }: Project) => {
           />
           <QuestionItem
             title="What i Learned"
-            items={responsibilities || []}
+            items={learnings || []}
             icon={<NotebookPen className="size-5 text-foreground/80" />}
           />
         </div>
