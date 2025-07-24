@@ -1,6 +1,6 @@
 import { H4, Large, Muted, Small } from "@/components/ui/typography";
 import { Project } from "../../types";
-import { Dot, NotebookPen, SquareCode } from "lucide-react";
+import { CheckCircle, Dot, NotebookPen } from "lucide-react";
 import { ReactNode } from "react";
 
 const ProjectItem = ({ name, description, responsibilities }: Project) => {
@@ -15,7 +15,7 @@ const ProjectItem = ({ name, description, responsibilities }: Project) => {
           <QuestionItem
             title="My Responsilties"
             items={responsibilities || []}
-            icon={<SquareCode className="size-5 text-foreground/80" />}
+            icon={<CheckCircle className="size-5 text-foreground/80" />}
           />
           <QuestionItem
             title="What i Learned"
