@@ -3,6 +3,7 @@ export interface Project {
   description: string;
   responsibilities?: string[];
   learnings?: string[];
+  image?: string;
 }
 
 export interface ExperienceItemProps {

@@ -9,6 +9,7 @@ const ProjectItem = ({
   description,
   responsibilities,
   learnings,
+  image,
 }: Project) => {
   return (
     <div className="grid grid-cols-3 gap-7 border p-4 rounded-xl">
@@ -30,15 +31,17 @@ const ProjectItem = ({
           />
         </div>
       </div>
-      <div className="flex items-center justify-center">
-        <Image
-          src="/images/botlyzer/bot1.png"
-          alt="Botlyzer"
-          width={1000}
-          height={1000}
-          className="rounded-lg object-cover"
-        />
-      </div>
+      {image && (
+        <div className="flex items-center justify-center">
+          <Image
+            src={image || ""}
+            alt={name}
+            width={1000}
+            height={1000}
+            className="rounded-lg object-cover"
+          />
+        </div>
+      )}
     </div>
   );
 };

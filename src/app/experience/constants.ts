@@ -29,6 +29,7 @@ export const experienceItems: ExperienceItemProps[] = [
           "Advanced State Management",
           "Tradingview Advanced Chart",
         ],
+        image: "/images/botlyzer/bot1.png",
       },
       {
         name: "Petrochemical Bandar Imam (BIPC)",
@@ -46,6 +47,7 @@ export const experienceItems: ExperienceItemProps[] = [
           "SWR",
           "MUI advanced customization",
         ],
+        image: "/images/bipc/bipc.png",
       },
     ],
   },
