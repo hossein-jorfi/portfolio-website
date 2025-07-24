@@ -3,8 +3,9 @@ import { CalendarDays, Building2, Code2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { H4, Muted, P } from "@/components/ui/typography";
+import { P } from "@/components/ui/typography";
 import { ExperienceItemProps } from "../../types";
+import ProjectItem from "./project-item";
 
 export default function ExperienceItem({
   company,
@@ -42,14 +43,8 @@ export default function ExperienceItem({
               <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 Projects
               </p>
-              {projects.map((p) => (
-                <div key={p.name} className="flex items-center gap-7">
-                  <div className="space-y-1">
-                    <H4>{p.name}</H4>
-                    <Muted>{p.description}</Muted>
-                  </div>
-                  <div className="border rounded-lg w-full h-[300px]" />
-                </div>
+              {projects.map((project) => (
+                <ProjectItem key={project.name} {...project} />
               ))}
             </div>
           </>
