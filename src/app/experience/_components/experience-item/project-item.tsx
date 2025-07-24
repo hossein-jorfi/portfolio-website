@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 
 const ProjectItem = ({ name, description, responsibilities }: Project) => {
   return (
-    <div className="grid grid-cols-3 gap-7">
+    <div className="grid grid-cols-3 gap-7 border p-4 rounded-xl">
       <div className="space-y-4 col-span-2">
         <div className="space-y-1">
           <H4>{name}</H4>
@@ -27,7 +27,7 @@ export default ProjectItem;
 
 const QuestionItem = ({ title, items }: { title: string; items: string[] }) => {
   return (
-    <div className="space-y-3 border rounded-lg p-3">
+    <div className="space-y-3 rounded-lg p-3 bg-muted shadow-sm">
       <Large>{title}</Large>
       <div className="space-y-2">
         {items?.map((item) => (

@@ -2,7 +2,6 @@
 import { CalendarDays, Building2, Code2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import { P } from "@/components/ui/typography";
 import { ExperienceItemProps } from "../../types";
 import ProjectItem from "./project-item";
@@ -38,8 +37,7 @@ export default function ExperienceItem({
       <CardContent className="space-y-4">
         {projects.length > 0 && (
           <>
-            <Separator />
-            <div className="space-y-3">
+            <div className="space-y-4">
               <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 Projects
               </p>
