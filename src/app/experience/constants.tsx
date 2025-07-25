@@ -1,3 +1,4 @@
+import { ChartCandlestick, Factory } from "lucide-react";
 import { ExperienceItemProps } from "./types";
 
 export const experienceItems: ExperienceItemProps[] = [
@@ -13,6 +14,7 @@ export const experienceItems: ExperienceItemProps[] = [
     projects: [
       {
         name: "Botlyzer",
+        icon: <ChartCandlestick />,
         description:
           "A Crypto Currency Platform. Users enter their Exchange API key in their panel and can manage All Exchanges they have in one app like manageing their assets, Trading with advanced Stop loss and take profit, Creating Stategies With Programming and Logical Conditions and see everything on Tradingview Chart and so many other fechures.",
         responsibilities: [
@@ -33,6 +35,7 @@ export const experienceItems: ExperienceItemProps[] = [
       },
       {
         name: "Petrochemical Bandar Imam (BIPC)",
+        icon: <Factory />,
         description:
           "Petrochemical have many pipes that need to be monitored and maintained. Every pipe has a liquid or gas that have to be in certen speed and pressure. so they need a dashboard so they can see all the pipes in diffrent ways and if a pipe speed is out of standard range, operator recive a warning notification.",
         responsibilities: [
