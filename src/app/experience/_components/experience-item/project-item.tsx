@@ -16,7 +16,7 @@ const ProjectItem = ({
     <div className="grid grid-cols-3 gap-7 border p-4 rounded-xl">
       <div className="space-y-4 col-span-2">
         <div className="space-y-1">
-          <H4 className="flex items-center gap-2">
+          <H4 className="flex items-center gap-2 [&>svg]:size-5">
             {icon && icon} {name}
           </H4>
           <Muted>{description}</Muted>
