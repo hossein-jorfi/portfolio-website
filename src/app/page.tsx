@@ -3,11 +3,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { H1, H3 } from "@/components/ui/typography";
 import { ArrowRight } from "lucide-react";
-import {CardsDemo} from "./_home/cards";
+import { CardsDemo } from "./_home/cards";
 
 export default function Home() {
   return (
-    <div className="app-container mt-30 flex flex-col items-center gap-2">
+    <div className="app-container mt-30 flex flex-col items-center gap-2 text-center">
       <Badge variant="secondary">Front End Developer</Badge>
       <H1>Hossein Jorfi</H1>
       <H3>I Can Build High Quality, Tested and Scalable Web Applications.</H3>
