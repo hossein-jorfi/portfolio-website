@@ -14,7 +14,7 @@ export default function ExperienceItem({
   projects,
 }: ExperienceItemProps) {
   return (
-    <Card className="w-full mt-6">
+    <Card className="w-full">
       <CardHeader className="gap-y-3.5">
         <div className="flex items-center justify-between gap-5">
           <CardTitle className="flex items-center gap-2 text-2xl">
