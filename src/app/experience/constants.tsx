@@ -55,19 +55,35 @@ export const experienceItems: ExperienceItemProps[] = [
     ],
   },
   {
-    company: "Company 2",
-    position: "Position 2",
+    company: "Sharen",
+    position: "Front End Developer",
     date: {
       start: "Ordibehesht 1404",
       end: "Current",
     },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis, error necessitatibus quod sequi accusamus provident, pariatur commodi doloremque quibusdam a vel unde harum architecto eaque, fuga cumque laborum fugiat.",
+      "In this company im the first Front End Developer they hired so all desicions related to what technologies to use is up to me. its a very good option because you have freedom to choose what to use and how to use it but its a great responsibility too because you have to make shure to choose best options.",
     projects: [
       {
-        name: "Voip Monitoring",
+        name: "VIOP Monitoring",
         icon: <PhoneCall />,
-        description: "Description 1",
+        description:
+          "This app is a Dashboard for monitor and manage related things to VOIP like Calls, Extentions, Queues and etc. as i mentioned before im the one to choose what tecnologies to use. based on the info they gave me about the app and how they want to sell it i chose to use React and not Next.js and i decided to use Shadcn UI so the App can have a good design system. also i was responsible for the UI and UX of the app. so read the Refactoring UI book from Tailwind creators and i learned a lot about UI and UX and how to make a good design system.",
+        image: "/images/botlyzer/bot1.png",
+        responsibilities: [
+          "Api calls and Caching",
+          "Optimize Large Lists",
+          "Apply Real time features",
+          "Finding Best tecnologies for related tasks",
+          "UI & UX",
+        ],
+        learnings: [
+          "UI & UX basic",
+          "Why we need a design system",
+          "Virtual Rendering",
+          "Working with Large set of data",
+          "Jira",
+        ],
       },
     ],
   },
