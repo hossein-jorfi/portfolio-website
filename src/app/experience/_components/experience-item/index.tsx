@@ -16,7 +16,7 @@ export default function ExperienceItem({
   return (
     <Card className="w-full">
       <CardHeader className="gap-y-3.5">
-        <div className="flex items-center justify-between gap-5">
+        <div className="flex items-center justify-between gap-5 flex-wrap">
           <CardTitle className="flex items-center gap-2 text-2xl">
             <Building2 className="size-6" />
             {company}
@@ -41,9 +41,11 @@ export default function ExperienceItem({
               <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 Projects
               </p>
-              {projects.map((project) => (
-                <ProjectItem key={project.name} {...project} />
-              ))}
+              <div className="space-y-10 sm:space-y-4">
+                {projects.map((project) => (
+                  <ProjectItem key={project.name} {...project} />
+                ))}
+              </div>
             </div>
           </>
         )}

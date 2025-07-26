@@ -13,15 +13,15 @@ const ProjectItem = ({
   image,
 }: Project) => {
   return (
-    <div className="grid grid-cols-3 gap-7 border p-4 rounded-xl">
-      <div className="space-y-4 col-span-2">
+    <div className="grid lg:grid-cols-3 gap-7 sm:border sm:p-4 sm:rounded-xl">
+      <div className="space-y-4 lg:col-span-2">
         <div className="space-y-1">
           <H4 className="flex items-center gap-2 [&>svg]:size-5">
             {icon && icon} {name}
           </H4>
           <Muted>{description}</Muted>
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <QuestionItem
             title="My Responsilties"
             items={responsibilities || []}
