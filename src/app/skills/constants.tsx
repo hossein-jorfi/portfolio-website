@@ -14,6 +14,9 @@ import {
   AntDesign,
   MaterialUI,
   AxiosLogo,
+  ReactQuery,
+  GraphQL,
+  SWR,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -76,5 +79,17 @@ export const BASE_SKILLS = [
   {
     text: "Axios",
     icon: <AxiosLogo />,
+  },
+  {
+    text: "React Query",
+    icon: <ReactQuery />,
+  },
+  {
+    text: "SWR",
+    icon: <SWR />,
+  },
+  {
+    text: "GraphQL",
+    icon: <GraphQL />,
   },
 ];
