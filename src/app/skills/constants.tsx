@@ -25,6 +25,7 @@ import {
   GitLab,
   GitHub,
   Webpack,
+  Socketio,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -117,6 +118,10 @@ export const BASE_SKILLS = [
       {
         text: "GraphQL",
         icon: <GraphQL />,
+      },
+      {
+        text: "WebSocket",
+        icon: <Socketio />,
       },
     ],
   },
