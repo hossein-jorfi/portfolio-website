@@ -24,6 +24,7 @@ import {
   Vite,
   GitLab,
   GitHub,
+  Webpack,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -138,6 +139,10 @@ export const BASE_SKILLS = [
       {
         text: "Vite",
         icon: <Vite />,
+      },
+      {
+        text: "Webpack",
+        icon: <Webpack />,
       },
     ],
   },
