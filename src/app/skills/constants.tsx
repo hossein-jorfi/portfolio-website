@@ -5,6 +5,14 @@ import {
   NextjsIcon,
   ReactIcon,
   TypeScript,
+  Redux,
+  Zustand,
+  TailwindCSS,
+  RadixUI,
+  ShadcnuiIcon,
+  BaseUI,
+  AntDesign,
+  MaterialUI,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -31,5 +39,37 @@ export const BASE_SKILLS = [
   {
     text: "Next.js",
     icon: <NextjsIcon />,
+  },
+  {
+    text: "Zustand",
+    icon: <Zustand />,
+  },
+  {
+    text: "Redux",
+    icon: <Redux />,
+  },
+  {
+    text: "Tailwind CSS",
+    icon: <TailwindCSS />,
+  },
+  {
+    text: "Radix UI",
+    icon: <RadixUI />,
+  },
+  {
+    text: "Shadcn UI",
+    icon: <ShadcnuiIcon />,
+  },
+  {
+    text: "Base UI",
+    icon: <BaseUI />,
+  },
+  {
+    text: "Material UI",
+    icon: <MaterialUI />,
+  },
+  {
+    text: "Ant Design",
+    icon: <AntDesign />,
   },
 ];
