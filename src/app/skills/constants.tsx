@@ -28,103 +28,138 @@ import {
 
 export const BASE_SKILLS = [
   {
-    text: "HTML",
-    icon: <HTML5 />,
+    category: "Core Skills",
+    skills: [
+      {
+        text: "HTML",
+        icon: <HTML5 />,
+      },
+      {
+        text: "CSS",
+        icon: <CSS />,
+      },
+      {
+        text: "Tailwind CSS",
+        icon: <TailwindCSS />,
+      },
+      {
+        text: "JavaScript",
+        icon: <JavaScript />,
+      },
+      {
+        text: "TypeScript",
+        icon: <TypeScript />,
+      },
+      {
+        text: "React",
+        icon: <ReactIcon />,
+      },
+      {
+        text: "Next.js",
+        icon: <NextjsIcon />,
+      },
+    ],
   },
   {
-    text: "CSS",
-    icon: <CSS />,
+    category: "State Management",
+    skills: [
+      {
+        text: "Zustand",
+        icon: <Zustand />,
+      },
+      {
+        text: "Redux",
+        icon: <Redux />,
+      },
+    ],
   },
   {
-    text: "JavaScript",
-    icon: <JavaScript />,
+    category: "UI Tools",
+    skills: [
+      {
+        text: "Radix UI",
+        icon: <RadixUI />,
+      },
+      {
+        text: "Shadcn UI",
+        icon: <ShadcnuiIcon />,
+      },
+      {
+        text: "Base UI",
+        icon: <BaseUI />,
+      },
+      {
+        text: "Material UI",
+        icon: <MaterialUI />,
+      },
+      {
+        text: "Ant Design",
+        icon: <AntDesign />,
+      },
+    ],
   },
   {
-    text: "TypeScript",
-    icon: <TypeScript />,
+    category: "Data fetching & API",
+    skills: [
+      {
+        text: "Axios",
+        icon: <AxiosLogo />,
+      },
+      {
+        text: "React Query",
+        icon: <ReactQuery />,
+      },
+      {
+        text: "SWR",
+        icon: <SWR />,
+      },
+      {
+        text: "GraphQL",
+        icon: <GraphQL />,
+      },
+    ],
   },
   {
-    text: "React",
-    icon: <ReactIcon />,
+    category: "Testing",
+    skills: [
+      {
+        text: "Jest",
+        icon: <Jest />,
+      },
+      {
+        text: "Vitest",
+        icon: <Vitest />,
+      },
+    ],
   },
   {
-    text: "Next.js",
-    icon: <NextjsIcon />,
+    category: "Build Tools",
+    skills: [
+      {
+        text: "Vite",
+        icon: <Vite />,
+      },
+    ],
   },
   {
-    text: "Zustand",
-    icon: <Zustand />,
-  },
-  {
-    text: "Redux",
-    icon: <Redux />,
-  },
-  {
-    text: "Tailwind CSS",
-    icon: <TailwindCSS />,
-  },
-  {
-    text: "Radix UI",
-    icon: <RadixUI />,
-  },
-  {
-    text: "Shadcn UI",
-    icon: <ShadcnuiIcon />,
-  },
-  {
-    text: "Base UI",
-    icon: <BaseUI />,
-  },
-  {
-    text: "Material UI",
-    icon: <MaterialUI />,
-  },
-  {
-    text: "Ant Design",
-    icon: <AntDesign />,
-  },
-  {
-    text: "Axios",
-    icon: <AxiosLogo />,
-  },
-  {
-    text: "React Query",
-    icon: <ReactQuery />,
-  },
-  {
-    text: "SWR",
-    icon: <SWR />,
-  },
-  {
-    text: "GraphQL",
-    icon: <GraphQL />,
-  },
-  {
-    text: "Jest",
-    icon: <Jest />,
-  },
-  {
-    text: "Vitest",
-    icon: <Vitest />,
-  },
-  {
-    text: "Vite",
-    icon: <Vite />,
-  },
-  {
-    text: "Git",
-    icon: <GitIcon />,
-  },
-  {
-    text: "GitHub",
-    icon: <GitHub />,
-  },
-  {
-    text: "GitLab",
-    icon: <GitLab />,
-  },
-  {
-    text: "Docker",
-    icon: <Docker />,
+    category: "Other tools",
+    skills: [
+      {
+        text: "Git",
+        icon: <GitIcon />,
+      },
+      {
+        text: "GitHub",
+        icon: <GitHub />,
+      },
+      {
+        text: "GitLab",
+        icon: <GitLab />,
+      },
+      {
+        text: "Docker",
+        icon: <Docker />,
+      },
+    ],
   },
 ];
