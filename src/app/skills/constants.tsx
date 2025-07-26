@@ -17,6 +17,13 @@ import {
   ReactQuery,
   GraphQL,
   SWR,
+  Vitest,
+  Jest,
+  Docker,
+  GitIcon,
+  Vite,
+  GitLab,
+  GitHub,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -91,5 +98,33 @@ export const BASE_SKILLS = [
   {
     text: "GraphQL",
     icon: <GraphQL />,
+  },
+  {
+    text: "Jest",
+    icon: <Jest />,
+  },
+  {
+    text: "Vitest",
+    icon: <Vitest />,
+  },
+  {
+    text: "Vite",
+    icon: <Vite />,
+  },
+  {
+    text: "Git",
+    icon: <GitIcon />,
+  },
+  {
+    text: "GitHub",
+    icon: <GitHub />,
+  },
+  {
+    text: "GitLab",
+    icon: <GitLab />,
+  },
+  {
+    text: "Docker",
+    icon: <Docker />,
   },
 ];
