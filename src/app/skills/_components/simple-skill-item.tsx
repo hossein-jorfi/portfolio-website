@@ -8,9 +8,9 @@ const SimpleSkillItem = ({
   icon: React.ReactNode;
 }) => {
   return (
-    <div className="flex items-center gap-3 rounded-lg p-6 bg-muted dark:bg-card">
-      <div className="[&>svg]:size-10">{icon}</div>
-      <Large>{text}</Large>
+    <div className="flex items-center gap-3 rounded-lg p-4 sm:p-6 bg-muted dark:bg-card">
+      <div className="[&>svg]:size-6 sm:[&>svg]:size-10">{icon}</div>
+      <Large className="text-sm sm:text-lg">{text}</Large>
     </div>
   );
 };
