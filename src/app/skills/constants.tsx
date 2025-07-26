@@ -1,4 +1,11 @@
-import { CSS, HTML5, JavaScript } from "@/components/icons/web-icons";
+import {
+  CSS,
+  HTML5,
+  JavaScript,
+  NextjsIcon,
+  ReactIcon,
+  TypeScript,
+} from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
   {
@@ -12,5 +19,17 @@ export const BASE_SKILLS = [
   {
     text: "JavaScript",
     icon: <JavaScript />,
+  },
+  {
+    text: "TypeScript",
+    icon: <TypeScript />,
+  },
+  {
+    text: "React",
+    icon: <ReactIcon />,
+  },
+  {
+    text: "Next.js",
+    icon: <NextjsIcon />,
   },
 ];
