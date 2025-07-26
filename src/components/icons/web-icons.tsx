@@ -1,3 +1,4 @@
+import { ArrowDownUp } from "lucide-react";
 import * as React from "react";
 import type { SVGProps } from "react";
 
@@ -1813,4 +1814,8 @@ export const AntDesign = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
   </svg>
+);
+
+export const AxiosLogo = (props: SVGProps<SVGSVGElement>) => (
+  <ArrowDownUp {...props} />
 );

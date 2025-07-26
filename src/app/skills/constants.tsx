@@ -13,6 +13,7 @@ import {
   BaseUI,
   AntDesign,
   MaterialUI,
+  AxiosLogo,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -71,5 +72,9 @@ export const BASE_SKILLS = [
   {
     text: "Ant Design",
     icon: <AntDesign />,
+  },
+  {
+    text: "Axios",
+    icon: <AxiosLogo />,
   },
 ];

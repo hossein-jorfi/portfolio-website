@@ -9,9 +9,7 @@ const SimpleSkillItem = ({
 }) => {
   return (
     <div className="flex items-center gap-3 rounded-lg p-6 bg-muted dark:bg-card">
-      <div className="[&>svg]:size-6">
-        {icon}
-      </div>
+      <div className="[&>svg]:size-10">{icon}</div>
       <Large>{text}</Large>
     </div>
   );
