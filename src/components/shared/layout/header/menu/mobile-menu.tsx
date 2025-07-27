@@ -56,6 +56,7 @@ const MenuButton = ({ item }: { item: (typeof menuItems)[number] }) => {
         onClick={() => {
           toggleSidebar();
         }}
+        className="font-bold"
       >
         <Link href={item.href}>
           <span>{item.label}</span>
