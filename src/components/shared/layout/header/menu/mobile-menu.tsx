@@ -11,6 +11,7 @@ import {
   SidebarMenuItem,
   SidebarProvider,
   SidebarTrigger,
+  useSidebar,
 } from "@/components/ui/sidebar";
 import { menuItems } from ".";
 import Link from "next/link";
@@ -23,30 +24,43 @@ const MobileMenu = () => {
 
   return (
     <SidebarProvider>
-        <SidebarTrigger />
+      <SidebarTrigger />
 
-        <Sidebar>
-          <SidebarContent>
-            <SidebarGroup>
-              <SidebarGroupLabel>Menu</SidebarGroupLabel>
-              <SidebarGroupContent>
-                <SidebarMenu>
-                  {menuItems.map((item) => (
-                    <SidebarMenuItem key={item.label}>
-                      <SidebarMenuButton asChild>
-                        <Link href={item.href}>
-                          <span>{item.label}</span>
-                        </Link>
-                      </SidebarMenuButton>
-                    </SidebarMenuItem>
-                  ))}
-                </SidebarMenu>
-              </SidebarGroupContent>
-            </SidebarGroup>
-          </SidebarContent>
-        </Sidebar>
+      <Sidebar>
+        <SidebarContent>
+          <SidebarGroup>
+            <SidebarGroupLabel>Menu</SidebarGroupLabel>
+            <SidebarGroupContent>
+              <SidebarMenu>
+                {menuItems.map((item) => (
+                  <MenuButton key={item.label} item={item} />
+                ))}
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
+        </SidebarContent>
+      </Sidebar>
     </SidebarProvider>
   );
 };
 
 export default MobileMenu;
+
+const MenuButton = ({ item }: { item: (typeof menuItems)[number] }) => {
+  const { toggleSidebar } = useSidebar();
+
+  return (
+    <SidebarMenuItem key={item.label}>
+      <SidebarMenuButton
+        asChild
+        onClick={() => {
+          toggleSidebar();
+        }}
+      >
+        <Link href={item.href}>
+          <span>{item.label}</span>
+        </Link>
+      </SidebarMenuButton>
+    </SidebarMenuItem>
+  );
+};
