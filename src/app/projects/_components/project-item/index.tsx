@@ -25,8 +25,8 @@ ProjectType) => {
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="grid grid-cols-3 gap-4">
-        <div className="flex flex-col gap-4 col-span-2">
+      <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="flex flex-col gap-4 md:col-span-2">
           <P className="!mt-0 leading-6">{text}</P>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill, index) => (
@@ -34,13 +34,15 @@ ProjectType) => {
             ))}
           </div>
         </div>
-        <Image
-          src={image}
-          className="rounded-lg overflow-hidden"
-          alt={title}
-          width={1000}
-          height={1000}
-        />
+        <div className="flex justify-center items-center">
+          <Image
+            src={image}
+            className="rounded-lg overflow-hidden"
+            alt={title}
+            width={500}
+            height={500}
+          />
+        </div>
 
         <div className="flex gap-2">
           <Button variant="outline" className="min-w-28" asChild>
