@@ -27,6 +27,7 @@ import {
   Webpack,
   Socketio,
   ReactRouter,
+  ReactFlow,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -132,6 +133,15 @@ export const BASE_SKILLS = [
       {
         text: "WebSocket",
         icon: <Socketio />,
+      },
+    ],
+  },
+  {
+    category: "Data Visualization",
+    skills: [
+      {
+        text: "React Flow",
+        icon: <ReactFlow />,
       },
     ],
   },
