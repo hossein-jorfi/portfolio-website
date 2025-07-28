@@ -32,6 +32,7 @@ import {
   ReactHookForm,
   Zod,
   TanStackIcon,
+  Adobe,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -95,6 +96,10 @@ export const BASE_SKILLS = [
       {
         text: "Base UI",
         icon: <BaseUI />,
+      },
+      {
+        text: "React Aria",
+        icon: <Adobe />,
       },
       {
         text: "Material UI",
