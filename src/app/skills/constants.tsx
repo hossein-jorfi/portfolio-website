@@ -30,6 +30,7 @@ import {
   ReactFlow,
   TradingView,
   ReactHookForm,
+  Zod,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -114,6 +115,10 @@ export const BASE_SKILLS = [
       {
         text: "React Hook Form",
         icon: <ReactHookForm />,
+      },
+      {
+        text: "Zod",
+        icon: <Zod />,
       },
     ],
   },
