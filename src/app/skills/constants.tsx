@@ -26,6 +26,7 @@ import {
   GitHub,
   Webpack,
   Socketio,
+  ReactRouter,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -97,6 +98,15 @@ export const BASE_SKILLS = [
       {
         text: "Ant Design",
         icon: <AntDesign />,
+      },
+    ],
+  },
+  {
+    category: "Important libraries",
+    skills: [
+      {
+        text: "React Router",
+        icon: <ReactRouter />,
       },
     ],
   },
