@@ -31,6 +31,7 @@ import {
   TradingView,
   ReactHookForm,
   Zod,
+  TanStackIcon,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -120,6 +121,18 @@ export const BASE_SKILLS = [
         text: "Zod",
         icon: <Zod />,
       },
+      {
+        text: "Tanstack Router",
+        icon: <TanStackIcon />,
+      },
+      {
+        text: "Tanstack Form",
+        icon: <TanStackIcon />,
+      },
+      {
+        text: "Tanstack Table",
+        icon: <TanStackIcon />,
+      },
     ],
   },
   {
@@ -157,6 +170,10 @@ export const BASE_SKILLS = [
       {
         text: "TradingView Advanced Chart",
         icon: <TradingView />,
+      },
+      {
+        text: "TanStack Virtual",
+        icon: <TanStackIcon />,
       },
     ],
   },
