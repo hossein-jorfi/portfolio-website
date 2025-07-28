@@ -28,6 +28,8 @@ import {
   Socketio,
   ReactRouter,
   ReactFlow,
+  TradingView,
+  ReactHookForm,
 } from "@/components/icons/web-icons";
 
 export const BASE_SKILLS = [
@@ -109,6 +111,10 @@ export const BASE_SKILLS = [
         text: "React Router",
         icon: <ReactRouter />,
       },
+      {
+        text: "React Hook Form",
+        icon: <ReactHookForm />,
+      },
     ],
   },
   {
@@ -142,6 +148,10 @@ export const BASE_SKILLS = [
       {
         text: "React Flow",
         icon: <ReactFlow />,
+      },
+      {
+        text: "TradingView Advanced Chart",
+        icon: <TradingView />,
       },
     ],
   },
