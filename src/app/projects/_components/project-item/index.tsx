@@ -18,15 +18,12 @@ const ProjectItem = ({
 ProjectType) => {
   return (
     <Card className="w-full">
-      <CardHeader className="gap-y-3.5">
-        <CardTitle className="flex items-center gap-2 text-2xl">
-          {/* <Building2 className="size-6" /> */}
-          {title}
-        </CardTitle>
+      <CardHeader>
+        <CardTitle className="flex items-center text-2xl">{title}</CardTitle>
       </CardHeader>
 
-      <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="flex flex-col gap-4 md:col-span-2">
+      <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex flex-col gap-4 ">
           <P className="!mt-0 leading-6">{text}</P>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill, index) => (
@@ -37,7 +34,7 @@ ProjectType) => {
         <div className="flex justify-center items-center">
           <Image
             src={image}
-            className="rounded-lg overflow-hidden"
+            className="rounded-lg overflow-hidden border-2"
             alt={title}
             width={500}
             height={500}
