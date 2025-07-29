@@ -17,7 +17,7 @@ export const experienceItems: ExperienceItemProps[] = [
         icon: <PhoneCall />,
         description:
           "This app is a Dashboard for monitor and manage related things to VOIP like Calls, Extentions, Queues and etc. as i mentioned before im the one to choose what tecnologies to use. based on the info they gave me about the app and how they want to sell it i chose to use React and not Next.js and i decided to use Shadcn UI so the App can have a good design system. also i was responsible for the UI and UX of the app. so read the Refactoring UI book from Tailwind creators and i learned a lot about UI and UX and how to make a good design system.",
-        image: "/images/botlyzer/bot1.png",
+        image: "/images/sharen/image_1.png",
         responsibilities: [
           "Api calls and Caching",
           "Optimize Large Lists",
