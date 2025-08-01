@@ -16,6 +16,7 @@ import {
 import { menuItems } from ".";
 import Link from "next/link";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { usePathname } from "next/navigation";
 
 const MobileMenu = () => {
   const isMobile = useIsMobile();
@@ -48,6 +49,7 @@ export default MobileMenu;
 
 const MenuButton = ({ item }: { item: (typeof menuItems)[number] }) => {
   const { toggleSidebar } = useSidebar();
+  const pathname = usePathname();
 
   return (
     <SidebarMenuItem key={item.label}>
@@ -56,7 +58,8 @@ const MenuButton = ({ item }: { item: (typeof menuItems)[number] }) => {
         onClick={() => {
           toggleSidebar();
         }}
-        className="font-bold"
+        className="font-medium"
+        isActive={pathname === item.href}
       >
         <Link href={item.href}>
           <span>{item.label}</span>
