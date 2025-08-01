@@ -41,7 +41,7 @@ ProjectType) => {
           />
         </div>
 
-        <div className="flex gap-2">
+        <div className="grid grid-cols-2 md:flex gap-2 mt-4 md:mt-1">
           <Button variant="outline" className="min-w-28" asChild>
             <Link href={gitHubLink} target="_blank">
               <GitHub /> GitHub
