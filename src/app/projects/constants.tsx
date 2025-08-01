@@ -26,7 +26,7 @@ export const PROJECTS: ProjectType[] = [
   {
     image: "/images/projects/jsonplaceholder.png",
     title: "Json Placeholder UI",
-    text: "This project is using the jsonplaceholder.typicode.com fake API. The point is how you can manage server data in UI with React-Query (Tanstack-Query). If you open a page, data that belongs to that page will be cached. If you leave the page and come back, instead of loading, you will see cached data. It will remain until new data replaces it (if the data has changed).",
+    text: "This project is using the jsonplaceholder.typicode.com  fake API. The point is how you can manage server data in UI with React-Query (Tanstack-Query). If you open a page, data that belongs to that page will be cached. If you leave the page and come back, instead of loading, you will see cached data. It will remain until new data replaces it (if the data has changed).",
     liveLink: "https://jorfi-jsonplaceholder.vercel.app/",
     gitHubLink: "https://github.com/hossein-jorfi/json-placeholder",
     skills: [
@@ -44,7 +44,7 @@ export const PROJECTS: ProjectType[] = [
   {
     image: "/images/projects/shop.png",
     title: "Shop",
-    text: "a Shop website usign fakestoreapi.com data build with Next.js and have different kinds of rendering (SSR, SSG, CSR). actions like add a product to cart is handled by zustand and cart page is handled with react query to get and cache data(CSR). the home page and shop page is static(SSG) and single product page is server side render (SSR). and with some tricks the website feels fast (top loading skeletons), and static routes feel dynamic (progress bar loading)",
+    text: "a Shop website usign fakestoreapi.com  data build with Next.js and have different kinds of rendering (SSR, SSG, CSR). actions like add a product to cart is handled by zustand and cart page is handled with react query to get and cache data(CSR). the home page and shop page is static(SSG) and single product page is server side render (SSR). and with some tricks the website feels fast (top loading skeletons), and static routes feel dynamic (progress bar loading)",
     liveLink: "https://jorfi-shop.vercel.app/",
     gitHubLink: "https://github.com/hossein-jorfi/Shop-Next.js",
     skills: [

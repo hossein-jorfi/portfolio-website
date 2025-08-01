@@ -24,7 +24,21 @@ ProjectType) => {
 
       <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex flex-col gap-4 ">
-          <P className="!mt-0 leading-6">{text}</P>
+          <P className="!mt-0 leading-6">
+            {text?.split(" ").map((i) => {
+              if (i?.includes(".com")) {
+                return (
+                  <Button variant="link" asChild key={i} className="p-0 h-fit text-base text-blue-500">
+                    <Link href={`https://${i}`} target="_blank">
+                      {" "}{i}{" "}
+                    </Link>
+                  </Button>
+                );
+              } else {
+                return `${i} `;
+              }
+            })}
+          </P>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill, index) => (
               <div key={index}>{skill({ className: "size-6" })}</div>
