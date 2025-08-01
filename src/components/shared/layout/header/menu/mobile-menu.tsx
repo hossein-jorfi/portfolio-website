@@ -17,6 +17,7 @@ import { menuItems } from ".";
 import Link from "next/link";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { usePathname } from "next/navigation";
+import { MenuIcon } from "lucide-react";
 
 const MobileMenu = () => {
   const isMobile = useIsMobile();
@@ -25,7 +26,7 @@ const MobileMenu = () => {
 
   return (
     <SidebarProvider>
-      <SidebarTrigger />
+      <SidebarTrigger className="p-0" icon={<MenuIcon className="size-5" />} />
 
       <Sidebar>
         <SidebarContent>
