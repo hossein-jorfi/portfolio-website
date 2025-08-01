@@ -18,8 +18,8 @@ const ContactDialog = () => {
         </DialogDescription>
       </DialogHeader>
       <DialogFooter>
-        <DialogClose>
-          <Button variant="ghost">Close</Button>
+        <DialogClose asChild>
+          <Button variant="outline">Close</Button>
         </DialogClose>
       </DialogFooter>
     </DialogContent>
