@@ -18,6 +18,7 @@ import Link from "next/link";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { usePathname } from "next/navigation";
 import { MenuIcon } from "lucide-react";
+import ContactButton from "@/app/_home/contact-button";
 
 const MobileMenu = () => {
   const isMobile = useIsMobile();
@@ -37,6 +38,11 @@ const MobileMenu = () => {
                 {menuItems.map((item) => (
                   <MenuButton key={item.label} item={item} />
                 ))}
+                <SidebarMenuItem>
+                  <SidebarMenuButton asChild className="font-medium">
+                    <ContactButton />
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>

@@ -6,6 +6,7 @@ import { menuItems } from ".";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import ContactButton from "@/app/_home/contact-button";
 
 const DesktopMenu = () => {
   const pathname = usePathname();
@@ -29,6 +30,7 @@ const DesktopMenu = () => {
           <Link href={item.href}>{item.label}</Link>
         </Button>
       ))}
+      <ContactButton />
     </div>
   );
 };

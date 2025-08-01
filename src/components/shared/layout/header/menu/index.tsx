@@ -22,10 +22,10 @@ export const menuItems = [
     label: "About",
     href: "/about",
   },
-  {
-    label: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   label: "Contact",
+  //   href: "/contact",
+  // },
 ];
 
 const Menu = () => {
