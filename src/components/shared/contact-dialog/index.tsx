@@ -17,7 +17,7 @@ const socials = [
   {
     name: "LinkedIn",
     icon: <Linkedin />,
-    url: "https://www.linkedin.com/in/hossein-jorfi/",
+    url: "https://www.linkedin.com/in/hosseinjorfi/",
   },
   {
     name: "GitHub",
@@ -27,7 +27,7 @@ const socials = [
   {
     name: "Telegram",
     icon: <Send />,
-    url: "https://t.me/hossein_jorfi",
+    url: "https://t.me/hosseinjorfi",
   },
 ];
 
