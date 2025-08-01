@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import { GitHub } from "@/components/icons/web-icons";
+import { GitHub, Vitest } from "@/components/icons/web-icons";
 
 const ProjectItem = ({
   image,
@@ -14,8 +14,8 @@ const ProjectItem = ({
   liveLink,
   gitHubLink,
   skills,
-}: // haveTest,
-ProjectType) => {
+  haveTest,
+}: ProjectType) => {
   return (
     <Card className="w-full">
       <CardHeader>
@@ -24,13 +24,19 @@ ProjectType) => {
 
       <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex flex-col gap-4 ">
-          <P className="!mt-0 leading-6">
+          <P className="!mt-0 leading-7 font-medium">
             {text?.split(" ").map((i) => {
               if (i?.includes(".com")) {
                 return (
-                  <Button variant="link" asChild key={i} className="p-0 h-fit text-base text-blue-500">
+                  <Button
+                    variant="link"
+                    asChild
+                    key={i}
+                    className="p-0 h-fit text-base text-blue-500"
+                  >
                     <Link href={`https://${i}`} target="_blank">
-                      {" "}{i}{" "}
+                      {" "}
+                      {i}{" "}
                     </Link>
                   </Button>
                 );
@@ -44,6 +50,25 @@ ProjectType) => {
               <div key={index}>{skill({ className: "size-6" })}</div>
             ))}
           </div>
+          {haveTest && (
+            <div className="flex items-center gap-2">
+              <Vitest className="w-7 h-7" />
+              <p className="text-primary/90 font-semibold text-sm">
+                I wrote unit tests with vitest for like post logic, click{" "}
+                <Button
+                  variant="link"
+                  asChild
+                  className="p-0 h-fit text-base text-blue-500"
+                >
+                  <Link href={haveTest} target="_blank">
+                    {" "}
+                    here{" "}
+                  </Link>
+                </Button>{" "}
+                to see the tests code
+              </p>
+            </div>
+          )}
         </div>
         <div className="flex justify-center items-center">
           <Image
