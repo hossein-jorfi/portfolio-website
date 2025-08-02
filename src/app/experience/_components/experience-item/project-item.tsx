@@ -19,7 +19,7 @@ const ProjectItem = ({
           <H4 className="flex items-center gap-2 [&>svg]:size-5">
             {icon && icon} {name}
           </H4>
-          <Muted>{description}</Muted>
+          <Muted className="leading-6 font-semibold">{description}</Muted>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <QuestionItem

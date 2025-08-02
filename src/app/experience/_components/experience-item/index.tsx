@@ -31,7 +31,7 @@ export default function ExperienceItem({
           {position}
         </Badge>
 
-        <P className="!mt-0 leading-6">{description}</P>
+        <P className="!mt-0 leading-6 font-medium">{description}</P>
       </CardHeader>
 
       <CardContent className="space-y-4">
