@@ -7,7 +7,7 @@ const ContactButton = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="ghost" size="sm">
+        <Button variant="ghost" size="sm" className="font-semibold">
           Contact <ArrowRight />
         </Button>
       </DialogTrigger>
