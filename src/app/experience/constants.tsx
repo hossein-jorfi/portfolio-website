@@ -31,6 +31,7 @@ export const experienceItems: ExperienceItemProps[] = [
           "Virtual rendering",
           "Handling large datasets",
           "Jira",
+          "React Flow",
         ],
       },
     ],
