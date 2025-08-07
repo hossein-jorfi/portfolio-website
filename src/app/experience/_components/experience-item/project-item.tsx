@@ -2,7 +2,7 @@ import { H4, Large, Muted, Small } from "@/components/ui/typography";
 import { Project } from "../../types";
 import { CheckCircle, Dot, NotebookPen } from "lucide-react";
 import { ReactNode } from "react";
-import Image from "next/image";
+import ScreenShots from "./screen-shots";
 
 const ProjectItem = ({
   name,
@@ -34,17 +34,7 @@ const ProjectItem = ({
           />
         </div>
       </div>
-      {image && (
-        <div className="flex items-center justify-center">
-          <Image
-            src={image || ""}
-            alt={name}
-            width={1000}
-            height={1000}
-            className="rounded-lg object-cover"
-          />
-        </div>
-      )}
+      {image && <ScreenShots image={image} name={name} />}
     </div>
   );
 };
