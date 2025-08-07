@@ -13,8 +13,8 @@ const ProjectItem = ({
   image,
 }: Project) => {
   return (
-    <div className="grid lg:grid-cols-3 gap-7 sm:border sm:p-4 sm:rounded-xl">
-      <div className="space-y-4 lg:col-span-2">
+    <div className="grid grid-cols-1 gap-7 sm:border sm:p-4 sm:rounded-xl">
+      <div className="space-y-4">
         <div className="space-y-1">
           <H4 className="flex items-center gap-2 [&>svg]:size-5">
             {icon && icon} {name}
