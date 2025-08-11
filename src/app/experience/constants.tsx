@@ -17,7 +17,15 @@ export const experienceItems: ExperienceItemProps[] = [
         icon: <PhoneCall />,
         description:
           "A dashboard application for monitoring and managing VOIP related features such as calls, extensions, queues, and more. Given the nature of the product and how it’s intended to be sold, I chose to use React (instead of Next.js) and Shadcn UI to ensure a solid design system. I was also fully responsible for the app’s UI and UX, so I read the book *Refactoring UI* by the creators of Tailwind CSS, which helped me greatly improve my design thinking.",
-        image: "/images/sharen/image_1.png",
+        images: [
+          "/images/sharen/image_1.png",
+          "/images/sharen/image_2.png",
+          "/images/sharen/image_3.png",
+          "/images/sharen/image_4.png",
+          "/images/sharen/image_5.png",
+          "/images/sharen/image_6.png",
+          "/images/sharen/image_7.png",
+        ],
         responsibilities: [
           "API calls and caching",
           "Optimizing large lists",
@@ -65,7 +73,11 @@ export const experienceItems: ExperienceItemProps[] = [
           "Advanced state management",
           "TradingView advanced chart",
         ],
-        image: "/images/botlyzer/bot1.png",
+        images: [
+          "/images/botlyzer/bot1.png",
+          "/images/botlyzer/bot2.png",
+          "/images/botlyzer/bot3.png",
+        ],
       },
       {
         name: "Petrochemical Bandar Imam (BIPC)",
@@ -84,7 +96,11 @@ export const experienceItems: ExperienceItemProps[] = [
           "SWR",
           "Advanced MUI customization",
         ],
-        image: "/images/bipc/bipc.png",
+        images: [
+          "/images/bipc/bipc.png",
+          "/images/bipc/bipc2.png",
+          "/images/bipc/bipc3.png",
+        ],
       },
     ],
   },

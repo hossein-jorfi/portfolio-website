@@ -5,7 +5,7 @@ export interface Project {
   description: string;
   responsibilities?: string[];
   learnings?: string[];
-  image?: string;
+  images?: string[];
   icon?: ReactNode;
 }
 

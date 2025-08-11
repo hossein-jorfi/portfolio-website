@@ -10,7 +10,7 @@ const ProjectItem = ({
   icon,
   responsibilities,
   learnings,
-  image,
+  images,
 }: Project) => {
   return (
     <div className="grid grid-cols-1 gap-7 sm:border sm:p-4 sm:rounded-xl">
@@ -34,7 +34,7 @@ const ProjectItem = ({
           />
         </div>
       </div>
-      {image && <ScreenShots image={image} name={name} />}
+      {images && <ScreenShots images={images} name={name} />}
     </div>
   );
 };

@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-const ScreenShots = ({ image, name }: { image: string; name: string }) => {
+const ScreenShots = ({ images, name }: { images: string[]; name: string }) => {
   return (
     <div className="px-12">
       <Carousel
@@ -20,7 +20,7 @@ const ScreenShots = ({ image, name }: { image: string; name: string }) => {
         }}
       >
         <CarouselContent>
-          {Array.from({ length: 4 }).map((_, index) => (
+          {images.map((image, index) => (
             <CarouselItem key={index} className="md:basis-1/2">
               <Link href={image} target="_blank">
                 <Image
