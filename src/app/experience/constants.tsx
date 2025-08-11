@@ -75,8 +75,6 @@ export const experienceItems: ExperienceItemProps[] = [
         ],
         images: [
           "/images/botlyzer/bot1.png",
-          "/images/botlyzer/bot2.png",
-          "/images/botlyzer/bot3.png",
         ],
       },
       {
@@ -98,8 +96,6 @@ export const experienceItems: ExperienceItemProps[] = [
         ],
         images: [
           "/images/bipc/bipc.png",
-          "/images/bipc/bipc2.png",
-          "/images/bipc/bipc3.png",
         ],
       },
     ],

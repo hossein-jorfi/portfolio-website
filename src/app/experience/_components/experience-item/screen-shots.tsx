@@ -27,7 +27,7 @@ const ScreenShots = ({ images, name }: { images: string[]; name: string }) => {
                   src={image || ""}
                   alt={name}
                   width={10000}
-                  height={10000}
+                  height={0}
                   className="w-full h-auto object-cover rounded-lg border-2 cursor-pointer"
                 />
               </Link>
