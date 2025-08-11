@@ -74,7 +74,10 @@ export const experienceItems: ExperienceItemProps[] = [
           "TradingView advanced chart",
         ],
         images: [
-          "/images/botlyzer/bot1.png",
+          "/images/botlyzer/bot_1.png",
+          "/images/botlyzer/bot_2.png",
+          "/images/botlyzer/bot_3.png",
+          "/images/botlyzer/bot_4.png",
         ],
       },
       {
