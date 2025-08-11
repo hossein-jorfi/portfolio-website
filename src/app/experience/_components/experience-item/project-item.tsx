@@ -2,7 +2,7 @@ import { H4, Large, Muted, Small } from "@/components/ui/typography";
 import { Project } from "../../types";
 import { CheckCircle, Dot, NotebookPen } from "lucide-react";
 import { ReactNode } from "react";
-import Image from "next/image";
+import ScreenShots from "./screen-shots";
 
 const ProjectItem = ({
   name,
@@ -10,11 +10,11 @@ const ProjectItem = ({
   icon,
   responsibilities,
   learnings,
-  image,
+  images,
 }: Project) => {
   return (
-    <div className="grid lg:grid-cols-3 gap-7 sm:border sm:p-4 sm:rounded-xl">
-      <div className="space-y-4 lg:col-span-2">
+    <div className="grid grid-cols-1 gap-7 sm:border sm:p-4 sm:rounded-xl">
+      <div className="space-y-4">
         <div className="space-y-1">
           <H4 className="flex items-center gap-2 [&>svg]:size-5">
             {icon && icon} {name}
@@ -34,17 +34,7 @@ const ProjectItem = ({
           />
         </div>
       </div>
-      {image && (
-        <div className="flex items-center justify-center">
-          <Image
-            src={image || ""}
-            alt={name}
-            width={1000}
-            height={1000}
-            className="rounded-lg object-cover"
-          />
-        </div>
-      )}
+      {images && <ScreenShots images={images} name={name} />}
     </div>
   );
 };
