@@ -6,7 +6,7 @@ export const experienceItems: ExperienceItemProps[] = [
     company: "Sharen",
     position: "Front End Developer",
     date: {
-      start: "Ordibehesht 1404",
+      start: "1404",
       end: "Current",
     },
     description:
@@ -48,8 +48,8 @@ export const experienceItems: ExperienceItemProps[] = [
     company: "Maroon Moshaver Arjan",
     position: "Front End Developer",
     date: {
-      start: "Azar 1402",
-      end: "Ordibehesht 1404",
+      start: "1402",
+      end: "1404",
     },
     description:
       "This was my first real experience working as a front-end developer on a team. I learned a lot during this time. not just from the work itself, but also from pushing myself to stay updated with modern technologies, even though it wasn't required. I eventually left the company because I wanted to work on more modern products that follow best practices and use cutting-edge technologies.",
